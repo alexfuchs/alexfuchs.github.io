@@ -42,6 +42,7 @@ p{margin:0 0 22.5px}
 .band .lead{max-width:640px;margin:18px auto 0;font:italic 16px/1.6 var(--serif);color:#fff;opacity:.85}
 .grid{max-width:1100px;margin:48px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:46px 60px;text-align:left}
 .cell h3{display:block;font:400 20px/29px var(--rozha);color:var(--tq);letter-spacing:.5px;margin-bottom:14px}
+.cell{scroll-margin-top:110px}
 .cell p{margin:0;font:13px/19px var(--serif);color:#fff;letter-spacing:.3px}
 
 /* ---------- Werdegang: 3 Spalten ---------- */

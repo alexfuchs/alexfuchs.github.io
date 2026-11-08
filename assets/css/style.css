@@ -36,6 +36,18 @@ p{margin:0 0 22.5px}
 .hero-title p{margin:18px 0 0;font:300 clamp(15px,2vw,22px)/1.5 var(--avenir);letter-spacing:.35em;text-transform:uppercase;color:#fff}
 .scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;color:#fff;font:300 13px var(--avenir);letter-spacing:.3em;text-transform:uppercase;opacity:.85}
 
+/* ---------- Sprach-Buttons ---------- */
+.lang-row{display:flex;gap:16px;justify-content:center;margin-top:38px}
+.lang{position:relative;flex:0 1 210px;min-height:66px;padding:16px 12px;border:2px solid rgba(255,255,255,.6);background-size:cover;background-position:center;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.lang::before{content:"";position:absolute;inset:0;background:rgba(24,39,46,.42);transition:background .2s}
+.lang span{position:relative;z-index:1;font:700 14px/1.3 var(--lulo);letter-spacing:3px;text-transform:uppercase;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.65)}
+.lang:hover{transform:translateY(-2px);border-color:#fff}
+.lang.on{border-color:var(--tq);box-shadow:0 0 0 2px rgba(60,194,210,.55),0 8px 20px rgba(0,0,0,.35)}
+.lang.on::before{background:rgba(24,39,46,.24)}
+.lang-de{background-image:url(../img/flags/de.png)}
+.lang-en{background-image:url(../img/flags/en.png)}
+.lang-pt{background-image:url(../img/flags/pt.png)}
+
 /* ---------- Band: Felder ---------- */
 .band{background:var(--band);padding:72px 24px 90px;text-align:center}
 .band h2,.houses h2{font:700 40px/1.2 var(--serif);color:var(--tq)}
@@ -124,6 +136,9 @@ p{margin:0 0 22.5px}
   .lightbox{padding:20px}
   .lightbox img{max-height:78vh;max-width:88vw}
   .lb-close{font-size:36px;top:6px;right:10px}
+  .lang-row{flex-wrap:wrap;margin-top:26px;gap:10px}
+  .lang{flex:1 1 30%;min-width:104px;min-height:54px;padding:12px 8px}
+  .lang span{font-size:12px;letter-spacing:2px}
 }
 @media (max-width:560px){
   .grid{grid-template-columns:1fr}

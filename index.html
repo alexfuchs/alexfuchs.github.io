@@ -11,7 +11,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23314e5d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='34' fill='%23fff' text-anchor='middle'%3EAF%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=playfair-display:400,400i,700,700i|rozha-one:400|montserrat:400,700|mulish:300,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=2">
+<link rel="stylesheet" href="/assets/css/style.css?v=3">
 </head>
 <body>
 
@@ -20,12 +20,12 @@
   <button class="menu-btn" type="button" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
   <nav class="nav" aria-label="Hauptmenü">
     <ul>
-      <li><a href="#it">IT</a></li>
-      <li><a href="#ai">AI</a></li>
-      <li><a href="#eth">ETH</a></li>
-      <li><a href="#brasil">Brasil</a></li>
-      <li><a href="#health">Health</a></li>
-      <li><a href="#politik">Politik</a></li>
+      <li><a href="#it" data-i18n="nav-it">IT</a></li>
+      <li><a href="#ai" data-i18n="nav-ai">AI</a></li>
+      <li><a href="#eth" data-i18n="nav-eth">ETH</a></li>
+      <li><a href="#brasil" data-i18n="nav-brasil">Brasil</a></li>
+      <li><a href="#health" data-i18n="nav-health">Health</a></li>
+      <li><a href="#politik" data-i18n="nav-politik">Politik</a></li>
     </ul>
   </nav>
 </header>
@@ -37,39 +37,44 @@
   <img src="/assets/img/alps/matterhorn.jpg" alt="Matterhorn von Riffelberg" fetchpriority="high">
   <div class="hero-title">
     <h1>Alex Fuchs</h1>
-    <p>Naturwissenschafter ETH · IT Engineer · Zürich</p>
+    <p data-i18n="hero-sub">Naturwissenschafter ETH · IT Engineer · Zürich</p>
+    <div class="lang-row" role="group" aria-label="Sprache / Language / Idioma">
+      <button class="lang lang-de" type="button" data-lang="de"><span>Deutsch</span></button>
+      <button class="lang lang-en" type="button" data-lang="en"><span>English</span></button>
+      <button class="lang lang-pt" type="button" data-lang="pt"><span>Português</span></button>
+    </div>
   </div>
   <div class="scroll-hint">Scroll ↓</div>
 </section>
 
 <!-- Felder & Interessen -->
 <section class="band" id="felder">
-  <h2>Felder &amp; Interessen</h2>
-  <p class="lead">Zwischen Technologie, Wissenschaft und Lebenswelt – sechs Themen, die mich bewegen.</p>
+  <h2 data-i18n="feld-h2">Felder &amp; Interessen</h2>
+  <p class="lead" data-i18n="feld-lead">Zwischen Technologie, Wissenschaft und Lebenswelt – sechs Themen, die mich bewegen.</p>
   <div class="grid">
     <div class="cell reveal" id="it">
-      <h3>IT</h3>
-      <p>DevOps, System Engineering und Webengineering – von der Architektur über die Entwicklung bis zum Betrieb. 25 Jahre Erfahrung in komplexen IT-Landschaften.</p>
+      <h3 data-i18n="it-h3">IT</h3>
+      <p data-i18n="it-p">DevOps, System Engineering und Webengineering – von der Architektur über die Entwicklung bis zum Betrieb. 25 Jahre Erfahrung in komplexen IT-Landschaften.</p>
     </div>
     <div class="cell reveal" id="ai">
-      <h3>AI</h3>
-      <p>Künstliche Intelligenz als Werkzeug von morgen: Modelle, Automatisierung und datengetriebene Entscheidungen – kritisch begleitet und praktisch genutzt.</p>
+      <h3 data-i18n="ai-h3">AI</h3>
+      <p data-i18n="ai-p">Künstliche Intelligenz als Werkzeug von morgen: Modelle, Automatisierung und datengetriebene Entscheidungen – kritisch begleitet und praktisch genutzt.</p>
     </div>
     <div class="cell reveal" id="eth">
-      <h3>Academic ETH</h3>
-      <p>Naturwissenschaften an der ETH Zürich, Master of Science 1997. Analytisches Denken, klare Methode und Präzision als Fundament jeder Aufgabe.</p>
+      <h3 data-i18n="eth-h3">Academic ETH</h3>
+      <p data-i18n="eth-p">Naturwissenschaften an der ETH Zürich, Master of Science 1997. Analytisches Denken, klare Methode und Präzision als Fundament jeder Aufgabe.</p>
     </div>
     <div class="cell reveal" id="brasil">
-      <h3>Brasil</h3>
-      <p>Herzliche Verbindung zu Brasilien: Musik, Kultur und Sprache – die Brücke zwischen Zürich und Südamerika.</p>
+      <h3 data-i18n="brasil-h3">Brasil</h3>
+      <p data-i18n="brasil-p">Herzliche Verbindung zu Brasilien: Musik, Kultur und Sprache – die Brücke zwischen Zürich und Südamerika.</p>
     </div>
     <div class="cell reveal" id="health">
-      <h3>Health</h3>
-      <p>Gesundheit als Kapital: Ausdauer, bewusste Ernährung und die Balance zwischen Kopf und Körper – mit den Bergen als natürlichem Ausgleich.</p>
+      <h3 data-i18n="health-h3">Health</h3>
+      <p data-i18n="health-p">Gesundheit als Kapital: Ausdauer, bewusste Ernährung und die Balance zwischen Kopf und Körper – mit den Bergen als natürlichem Ausgleich.</p>
     </div>
     <div class="cell reveal" id="politik">
-      <h3>Politik</h3>
-      <p>Engagiert in Gesellschaft und Politik: informiert, kritisch und konstruktiv – mit einem offenen Blick für das Gemeinwesen.</p>
+      <h3 data-i18n="politik-h3">Politik</h3>
+      <p data-i18n="politik-p">Engagiert in Gesellschaft und Politik: informiert, kritisch und konstruktiv – mit einem offenen Blick für das Gemeinwesen.</p>
     </div>
   </div>
 </section>
@@ -79,34 +84,34 @@
   <div class="col reveal">
     <h2>ETH Zürich</h2>
     <p class="when">Master of Science, 1997</p>
-    <p>Naturwissenschaftliche Ausbildung mit <strong>Schwerpunkt auf Analyse und Methode</strong> – das Fundament für einen analytischen Blick auf Technologie, Daten und Systeme.</p>
+    <p><span data-i18n="col1a">Naturwissenschaftliche Ausbildung mit</span> <strong data-i18n="col1b">Schwerpunkt auf Analyse und Methode</strong> <span data-i18n="col1c">– das Fundament für einen analytischen Blick auf Technologie, Daten und Systeme.</span></p>
   </div>
   <div class="col reveal">
     <h2>Sun Microsystems</h2>
     <p class="when">Presales Engineer, 1998–2005</p>
-    <p>Technische Kundenberatung, <strong>Proof-of-Concepts und Produktpräsentationen</strong> zur Unterstützung des Verkaufs bei komplexen IT-Infrastrukturprojekten.</p>
+    <p><span data-i18n="col2a">Technische Kundenberatung,</span> <strong data-i18n="col2b">Proof-of-Concepts und Produktpräsentationen</strong> <span data-i18n="col2c">zur Unterstützung des Verkaufs bei komplexen IT-Infrastrukturprojekten.</span></p>
   </div>
   <div class="col reveal">
     <h2>ZKB</h2>
     <p class="when">Senior System Engineer Webengineering, 2005–2025</p>
-    <p>Konzeption, Entwicklung und Betrieb von <strong>Webapplikationen im E-Banking</strong> sowie Webservices für sämtliche Bankapplikationen. Verantwortung für Architektur, Sicherheit und Weiterentwicklung der Webengineering-Plattform.</p>
+    <p><span data-i18n="col3a">Konzeption, Entwicklung und Betrieb von</span> <strong data-i18n="col3b">Webapplikationen im E-Banking</strong> <span data-i18n="col3c">sowie Webservices für sämtliche Bankapplikationen. Verantwortung für Architektur, Sicherheit und Weiterentwicklung der Webengineering-Plattform.</span></p>
   </div>
 </section>
 
 <!-- Zitat-Band: Bachalpsee -->
 <section class="quote" style="background-image:url(/assets/img/alps/bachalpsee.jpg)">
-  <blockquote>«In den Bergen findet der Kopf zurück, was der Bildschirm ihm nimmt: Weite, Klarheit und Perspektive.»</blockquote>
-  <cite>Ausgleich für Geist und Gesundheit</cite>
+  <blockquote data-i18n="quote1">«In den Bergen findet der Kopf zurück, was der Bildschirm ihm nimmt: Weite, Klarheit und Perspektive.»</blockquote>
+  <cite data-i18n="cite1">Ausgleich für Geist und Gesundheit</cite>
 </section>
 
 <!-- Häuser -->
 <section class="houses" id="haeuser">
-  <h2>Häuser Frauenfeld &amp; Winterthur</h2>
-  <p class="lead">Liegenschaften in Frauenfeld und Winterthur – gepflegt, vermietet und mit Liebe zum Detail. Bild anklicken: mit den Pfeilen ← → durch die ganze Bilderserie blättern.</p>
+  <h2 data-i18n="houses-h2">Häuser Frauenfeld &amp; Winterthur</h2>
+  <p class="lead" data-i18n="houses-lead">Liegenschaften in Frauenfeld und Winterthur – gepflegt, vermietet und mit Liebe zum Detail. Bild anklicken: mit den Pfeilen ← → durch die ganze Bilderserie blättern.</p>
 
   <div class="house" data-house="ff21" data-files="01.jpg,02.jpg,03.jpg,04.jpg,05.jpg,06.jpg,07.jpg,08.jpg,09.jpg,10.jpg,11.jpg,12.jpg,13.jpg,14.jpg,15.jpg,16.jpg,17.jpg,18.jpg,19.jpg,20.jpg,21.jpg,22.jpg,23.jpg,24.jpg,25.jpg,26.jpg,27.jpg,28.jpg,29.jpg,30.jpg,31.jpg,32.jpg">
     <h3>Frauenfeld – Freiestrasse 21</h3>
-    <p class="loc">Thurgau · Schweiz · 32 Bilder</p>
+    <p class="loc" data-i18n="loc-ff21">Thurgau · Schweiz · 32 Bilder</p>
     <div class="gallery">
       <div class="grow">
         <a class="gi" data-file="01.jpg" href="assets/img/houses/ff21/01.jpg"><img src="assets/img/houses/ff21/01.jpg" alt="Freiestrasse 21, Frauenfeld" loading="lazy"></a>
@@ -125,7 +130,7 @@
 
   <div class="house" data-house="ff23" data-files="01.jpg,02.jpg,03.jpg,04.jpg,05.jpg,06.jpg,07.jpg,08.jpg,09.jpg,10.jpg,11.jpg,12.jpg,13.jpg,14.jpg,15.jpg,16.jpg,17.jpg,18.jpg,19.jpg,20.jpg,21.jpg,22.jpg,23.jpg,24.jpg,25.jpg">
     <h3>Frauenfeld – Freiestrasse 23</h3>
-    <p class="loc">Thurgau · Schweiz · 25 Bilder</p>
+    <p class="loc" data-i18n="loc-ff23">Thurgau · Schweiz · 25 Bilder</p>
     <div class="gallery">
       <div class="grow">
         <a class="gi" data-file="01.jpg" href="assets/img/houses/ff23/01.jpg"><img src="assets/img/houses/ff23/01.jpg" alt="Freiestrasse 23, Frauenfeld" loading="lazy"></a>
@@ -144,7 +149,7 @@
 
   <div class="house" data-house="ww" data-files="01.jpg,02.jpg,03.jpg,04.jpg,05.jpg,06.jpg,07.jpg,08.jpg">
     <h3>Winterthur – Friedheimstrasse</h3>
-    <p class="loc">Zürich · Schweiz · 8 Bilder</p>
+    <p class="loc" data-i18n="loc-ww">Zürich · Schweiz · 8 Bilder</p>
     <div class="gallery">
       <div class="grow">
         <a class="gi" data-file="01.jpg" href="assets/img/houses/ww/01.jpg"><img src="assets/img/houses/ww/01.jpg" alt="Friedheimstrasse, Winterthur" loading="lazy"></a>
@@ -164,21 +169,21 @@
 
 <!-- Panorama-Band: Eiger, Mönch und Jungfrau -->
 <section class="quote" style="background-image:url(/assets/img/alps/eiger.jpg);padding:90px 24px">
-  <blockquote>«Eiger, Mönch und Jungfrau – die Bergwelt vor der Haustür.»</blockquote>
-  <cite>Grindelwald · Berner Oberland</cite>
+  <blockquote data-i18n="quote2">«Eiger, Mönch und Jungfrau – die Bergwelt vor der Haustür.»</blockquote>
+  <cite data-i18n="cite2">Grindelwald · Berner Oberland</cite>
 </section>
 
 </main>
 
 <footer class="site-foot" id="kontakt">
-  <h2>Kontakt</h2>
+  <h2 data-i18n="foot-kicker">Kontakt</h2>
   <p class="foot-contact">
     +41 79 404 35 49<br>
     <a href="mailto:fuchs222@gmail.com">fuchs222@gmail.com</a>
   </p>
 </footer>
 
-<div class="copyright">COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED&nbsp;&nbsp;|&nbsp;&nbsp;ALPENFOTOS: WIKIMEDIA COMMONS – PARADISE CHRONICLE, MARKETA WRANOVA, GÜNTER SEGGEBÄING, MAIX (CC BY-SA)</div>
+<div class="copyright" data-i18n="copyright">COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED&nbsp;&nbsp;|&nbsp;&nbsp;ALPENFOTOS: WIKIMEDIA COMMONS – PARADISE CHRONICLE, MARKETA WRANOVA, GÜNTER SEGGEBÄING, MAIX (CC BY-SA)</div>
 
 <div class="lightbox" hidden>
   <button class="lb-close" aria-label="Schliessen">×</button>
@@ -190,6 +195,142 @@
 <script>
 (function(){
   var d = document;
+
+  // ---------- i18n ----------
+  var I18N = {
+    de: {
+      title: 'Alex Fuchs · Naturwissenschafter ETH & IT Engineer',
+      'nav-it': 'IT', 'nav-ai': 'AI', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
+      'nav-health': 'Health', 'nav-politik': 'Politik',
+      'hero-sub': 'Naturwissenschafter ETH · IT Engineer · Zürich',
+      'feld-h2': 'Felder & Interessen',
+      'feld-lead': 'Zwischen Technologie, Wissenschaft und Lebenswelt – sechs Themen, die mich bewegen.',
+      'it-h3': 'IT',
+      'it-p': 'DevOps, System Engineering und Webengineering – von der Architektur über die Entwicklung bis zum Betrieb. 25 Jahre Erfahrung in komplexen IT-Landschaften.',
+      'ai-h3': 'AI',
+      'ai-p': 'Künstliche Intelligenz als Werkzeug von morgen: Modelle, Automatisierung und datengetriebene Entscheidungen – kritisch begleitet und praktisch genutzt.',
+      'eth-h3': 'Academic ETH',
+      'eth-p': 'Naturwissenschaften an der ETH Zürich, Master of Science 1997. Analytisches Denken, klare Methode und Präzision als Fundament jeder Aufgabe.',
+      'brasil-h3': 'Brasil',
+      'brasil-p': 'Herzliche Verbindung zu Brasilien: Musik, Kultur und Sprache – die Brücke zwischen Zürich und Südamerika.',
+      'health-h3': 'Health',
+      'health-p': 'Gesundheit als Kapital: Ausdauer, bewusste Ernährung und die Balance zwischen Kopf und Körper – mit den Bergen als natürlichem Ausgleich.',
+      'politik-h3': 'Politik',
+      'politik-p': 'Engagiert in Gesellschaft und Politik: informiert, kritisch und konstruktiv – mit einem offenen Blick für das Gemeinwesen.',
+      'col1a': 'Naturwissenschaftliche Ausbildung mit', 'col1b': 'Schwerpunkt auf Analyse und Methode',
+      'col1c': '– das Fundament für einen analytischen Blick auf Technologie, Daten und Systeme.',
+      'col2a': 'Technische Kundenberatung,', 'col2b': 'Proof-of-Concepts und Produktpräsentationen',
+      'col2c': 'zur Unterstützung des Verkaufs bei komplexen IT-Infrastrukturprojekten.',
+      'col3a': 'Konzeption, Entwicklung und Betrieb von', 'col3b': 'Webapplikationen im E-Banking',
+      'col3c': 'sowie Webservices für sämtliche Bankapplikationen. Verantwortung für Architektur, Sicherheit und Weiterentwicklung der Webengineering-Plattform.',
+      'quote1': '«In den Bergen findet der Kopf zurück, was der Bildschirm ihm nimmt: Weite, Klarheit und Perspektive.»',
+      'cite1': 'Ausgleich für Geist und Gesundheit',
+      'quote2': '«Eiger, Mönch und Jungfrau – die Bergwelt vor der Haustür.»',
+      'cite2': 'Grindelwald · Berner Oberland',
+      'houses-h2': 'Häuser Frauenfeld & Winterthur',
+      'houses-lead': 'Liegenschaften in Frauenfeld und Winterthur – gepflegt, vermietet und mit Liebe zum Detail. Bild anklicken: mit den Pfeilen ← → durch die ganze Bilderserie blättern.',
+      'loc-ff21': 'Thurgau · Schweiz · 32 Bilder',
+      'loc-ff23': 'Thurgau · Schweiz · 25 Bilder',
+      'loc-ww': 'Zürich · Schweiz · 8 Bilder',
+      'foot-kicker': 'Kontakt',
+      'copyright': 'COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED  |  ALPENFOTOS: WIKIMEDIA COMMONS – PARADISE CHRONICLE, MARKETA WRANOVA, GÜNTER SEGGEBÄING, MAIX (CC BY-SA)'
+    },
+    en: {
+      title: 'Alex Fuchs · Natural Scientist ETH & IT Engineer',
+      'nav-it': 'IT', 'nav-ai': 'AI', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
+      'nav-health': 'Health', 'nav-politik': 'Politics',
+      'hero-sub': 'Natural Scientist ETH · IT Engineer · Zurich',
+      'feld-h2': 'Fields & Interests',
+      'feld-lead': 'Between technology, science and everyday life – six topics that move me.',
+      'it-h3': 'IT',
+      'it-p': 'DevOps, system engineering and web engineering – from architecture through development to operations. 25 years of experience in complex IT landscapes.',
+      'ai-h3': 'AI',
+      'ai-p': 'Artificial intelligence as a tool of tomorrow: models, automation and data-driven decisions – critically examined and put to practical use.',
+      'eth-h3': 'Academic ETH',
+      'eth-p': 'Natural sciences at ETH Zurich, Master of Science 1997. Analytical thinking, clear method and precision as the foundation of every task.',
+      'brasil-h3': 'Brasil',
+      'brasil-p': 'A warm connection to Brazil: music, culture and language – the bridge between Zurich and South America.',
+      'health-h3': 'Health',
+      'health-p': 'Health as capital: endurance, conscious nutrition and the balance of mind and body – with the mountains as a natural counterweight.',
+      'politik-h3': 'Politics',
+      'politik-p': 'Engaged in society and politics: informed, critical and constructive – with an open mind for the common good.',
+      'col1a': 'A natural-scientific education with', 'col1b': 'a focus on analysis and method',
+      'col1c': '– the foundation for an analytical view of technology, data and systems.',
+      'col2a': 'Technical customer consulting,', 'col2b': 'proofs-of-concept and product presentations',
+      'col2c': 'supporting sales in complex IT infrastructure projects.',
+      'col3a': 'Design, development and operation of', 'col3b': 'e-banking web applications',
+      'col3c': 'and web services for all banking applications. Responsible for architecture, security and the ongoing development of the web engineering platform.',
+      'quote1': '«In the mountains, the mind recovers what the screen takes from it: space, clarity and perspective.»',
+      'cite1': 'Balance for mind and health',
+      'quote2': '«Eiger, Mönch and Jungfrau – the alpine world on your doorstep.»',
+      'cite2': 'Grindelwald · Bernese Oberland',
+      'houses-h2': 'Houses Frauenfeld & Winterthur',
+      'houses-lead': 'Properties in Frauenfeld and Winterthur – well kept, rented and maintained with attention to detail. Click a photo: use the ← → arrows to browse the whole series.',
+      'loc-ff21': 'Thurgau · Switzerland · 32 photos',
+      'loc-ff23': 'Thurgau · Switzerland · 25 photos',
+      'loc-ww': 'Zurich · Switzerland · 8 photos',
+      'foot-kicker': 'Contact',
+      'copyright': 'COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED  |  ALPINE PHOTOS: WIKIMEDIA COMMONS – PARADISE CHRONICLE, MARKETA WRANOVA, GÜNTER SEGGEBÄING, MAIX (CC BY-SA)'
+    },
+    pt: {
+      title: 'Alex Fuchs · Cientista Natural ETH & Engenheiro de TI',
+      'nav-it': 'TI', 'nav-ai': 'IA', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
+      'nav-health': 'Saúde', 'nav-politik': 'Política',
+      'hero-sub': 'Cientista Natural ETH · Engenheiro de TI · Zurique',
+      'feld-h2': 'Áreas & Interesses',
+      'feld-lead': 'Entre tecnologia, ciência e vida cotidiana – seis temas que me movem.',
+      'it-h3': 'TI',
+      'it-p': 'DevOps, engenharia de sistemas e engenharia web – da arquitetura ao desenvolvimento e à operação. 25 anos de experiência em ambientes de TI complexos.',
+      'ai-h3': 'IA',
+      'ai-p': 'Inteligência artificial como ferramenta do futuro: modelos, automação e decisões baseadas em dados – com olhar crítico e uso prático.',
+      'eth-h3': 'ETH Acadêmica',
+      'eth-p': 'Ciências naturais na ETH Zurique, Master of Science 1997. Pensamento analítico, método claro e precisão como base de cada tarefa.',
+      'brasil-h3': 'Brasil',
+      'brasil-p': 'Um vínculo caloroso com o Brasil: música, cultura e idioma – a ponte entre Zurique e a América do Sul.',
+      'health-h3': 'Saúde',
+      'health-p': 'Saúde como capital: resistência, alimentação consciente e o equilíbrio entre mente e corpo – com as montanhas como contrapeso natural.',
+      'politik-h3': 'Política',
+      'politik-p': 'Engajado na sociedade e na política: informado, crítico e construtivo – com um olhar aberto para o bem comum.',
+      'col1a': 'Formação em ciências naturais com', 'col1b': 'foco em análise e método',
+      'col1c': '– a base para um olhar analítico sobre tecnologia, dados e sistemas.',
+      'col2a': 'Consultoria técnica ao cliente,', 'col2b': 'provas de conceito e apresentações de produtos',
+      'col2c': 'apoiando as vendas em projetos complexos de infraestrutura de TI.',
+      'col3a': 'Conceção, desenvolvimento e operação de', 'col3b': 'aplicações web de e-banking',
+      'col3c': 'e webservices para todas as aplicações do banco. Responsável pela arquitetura, segurança e evolução da plataforma de web engineering.',
+      'quote1': '«Nas montanhas, a mente recupera o que a tela lhe tira: amplitude, clareza e perspectiva.»',
+      'cite1': 'Equilíbrio para mente e saúde',
+      'quote2': '«Eiger, Mönch e Jungfrau – o mundo alpino à porta de casa.»',
+      'cite2': 'Grindelwald · Oberland Bernês',
+      'houses-h2': 'Casas em Frauenfeld e Winterthur',
+      'houses-lead': 'Imóveis em Frauenfeld e Winterthur – bem cuidados, alugados e com atenção ao detalhe. Clique numa foto: use as setas ← → para navegar por toda a série.',
+      'loc-ff21': 'Turgóvia · Suíça · 32 fotos',
+      'loc-ff23': 'Turgóvia · Suíça · 25 fotos',
+      'loc-ww': 'Zurique · Suíça · 8 fotos',
+      'foot-kicker': 'Contato',
+      'copyright': 'COPYRIGHT © 2026 ALEX FUCHS · TODOS OS DIREITOS RESERVADOS  |  FOTOS DOS ALPES: WIKIMEDIA COMMONS – PARADISE CHRONICLE, MARKETA WRANOVA, GÜNTER SEGGEBÄING, MAIX (CC BY-SA)'
+    }
+  };
+
+  function setLang(l){
+    if (!I18N[l]) l = 'de';
+    d.documentElement.lang = l;
+    if (I18N[l].title) d.title = I18N[l].title;
+    d.querySelectorAll('[data-i18n]').forEach(function(el){
+      var t = I18N[l][el.getAttribute('data-i18n')];
+      if (t != null) el.textContent = t;
+    });
+    d.querySelectorAll('.lang').forEach(function(b){
+      b.classList.toggle('on', b.getAttribute('data-lang') === l);
+    });
+    try { localStorage.setItem('af-lang', l); } catch (e) {}
+  }
+  d.querySelectorAll('.lang').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); });
+  });
+  var saved = 'de';
+  try { saved = localStorage.getItem('af-lang') || 'de'; } catch (e) {}
+  setLang(saved);
+
   // Menü
   var head = d.querySelector('.site-head'), btn = d.querySelector('.menu-btn');
   btn.addEventListener('click', function(){

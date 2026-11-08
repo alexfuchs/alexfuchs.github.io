@@ -1,0 +1,117 @@
+/* alexfuchs.github.io – Design im Stil von yaraborges.com */
+:root{
+  --bg:#ebfeff; --band:#314e5d; --dark:#18272e; --tq:#3cc2d2; --cream:#fefbf1; --menu:#87a4b2;
+  --c1:#ebfeff; --c2:#dbfdff; --c3:#c7fafc; --c4:#b5f2f5;
+  --serif:"Playfair Display",Georgia,serif; --rozha:"Rozha One","Playfair Display",Georgia,serif;
+  --lulo:"Montserrat",Arial,sans-serif; --avenir:"Mulish","Avenir Next",Avenir,Arial,sans-serif;
+  --head:95px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--band);font:15px/22.5px var(--serif);letter-spacing:.75px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:700}
+p{margin:0 0 22.5px}
+
+/* ---------- Header ---------- */
+.site-head{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--head);background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc(50% - 712px)) 0 max(20px,calc(50% - 714px))}
+.logo{font:italic 700 30px/1 var(--serif);color:var(--band);text-decoration:none;letter-spacing:1px}
+.logo span{color:var(--tq)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center}
+.nav a{display:block;padding:8px 13px;font:300 18px/1.2 var(--avenir);letter-spacing:0;color:var(--menu);text-decoration:none;transition:color .2s}
+.nav a:hover{color:var(--tq)}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;padding:10px}
+.menu-btn span{display:block;height:2px;margin:6px 0;background:var(--menu);transition:.25s}
+.menu-open .menu-btn span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-open .menu-btn span:nth-child(2){opacity:0}
+.menu-open .menu-btn span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;margin-top:var(--head);height:calc(100svh - var(--head));min-height:480px;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,39,46,.18) 0%,rgba(24,39,46,0) 45%,rgba(24,39,46,.55) 100%)}
+.hero-title{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:2;text-align:center;width:min(92%,900px)}
+.hero-title h1{font:italic 700 clamp(52px,9vw,110px)/1.05 var(--serif);color:#fff;letter-spacing:.04em;text-shadow:0 .03em .25em rgba(0,0,0,.35)}
+.hero-title p{margin:18px 0 0;font:300 clamp(15px,2vw,22px)/1.5 var(--avenir);letter-spacing:.35em;text-transform:uppercase;color:#fff}
+.scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;color:#fff;font:300 13px var(--avenir);letter-spacing:.3em;text-transform:uppercase;opacity:.85}
+
+/* ---------- Band: Felder ---------- */
+.band{background:var(--band);padding:72px 24px 90px;text-align:center}
+.band h2,.houses h2{font:700 40px/1.2 var(--serif);color:var(--tq)}
+.band .lead{max-width:640px;margin:18px auto 0;font:italic 16px/1.6 var(--serif);color:#fff;opacity:.85}
+.grid{max-width:1100px;margin:48px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:46px 60px;text-align:left}
+.cell h3{display:block;font:400 20px/29px var(--rozha);color:var(--tq);letter-spacing:.5px;margin-bottom:14px}
+.cell p{margin:0;font:13px/19px var(--serif);color:#fff;letter-spacing:.3px}
+
+/* ---------- Werdegang: 3 Spalten ---------- */
+.cols{display:grid;grid-template-columns:repeat(3,1fr)}
+.col{padding:64px 56px 48px}
+.cols .col:nth-child(1){background:var(--c1)}
+.cols .col:nth-child(2){background:var(--c2)}
+.cols .col:nth-child(3){background:var(--c3)}
+.col h2{font:700 15px/22.5px var(--serif);margin-bottom:10px}
+.col .when{font:italic 14px var(--serif);color:#5d6b72;margin-bottom:22.5px}
+.col p{color:#5d6b72}
+.col p strong{color:var(--band)}
+
+/* ---------- Foto-Band (Zitat) ---------- */
+.quote{position:relative;background:center/cover no-repeat fixed;text-align:center;padding:140px 24px}
+@media (max-width:900px){.quote{background-attachment:scroll}}
+.quote::after{content:"";position:absolute;inset:0;background:rgba(24,39,46,.45)}
+.quote blockquote{position:relative;z-index:2;max-width:760px;margin:0 auto;font:italic 700 clamp(24px,3.6vw,40px)/1.35 var(--serif);color:#fff;letter-spacing:.03em;text-shadow:0 .05em .3em rgba(0,0,0,.4)}
+.quote cite{position:relative;z-index:2;display:block;margin-top:22px;font:300 14px var(--avenir);letter-spacing:.3em;text-transform:uppercase;color:#fff;font-style:normal;opacity:.85}
+
+/* ---------- Häuser ---------- */
+.houses{background:var(--dark);padding:72px 24px 90px}
+.houses h2{text-align:center}
+.houses .lead{max-width:640px;margin:18px auto 0;text-align:center;font:italic 16px/1.6 var(--serif);color:#fff;opacity:.85}
+.house{max-width:1100px;margin:64px auto 0}
+.house h3{font:italic 700 30px/1.2 var(--serif);color:#fff;letter-spacing:1px;margin-bottom:6px}
+.house .loc{font:300 14px var(--avenir);letter-spacing:.25em;text-transform:uppercase;color:var(--tq);margin-bottom:28px}
+.gallery{display:flex;flex-direction:column;gap:10px}
+.grow{display:flex;gap:10px}
+.gi{flex:1 1 0;aspect-ratio:3/2;display:block;overflow:hidden;cursor:zoom;background:#0d161a}
+.gi img{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.gi:hover img{opacity:.85}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(10,20,25,.92);display:flex;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.lightbox[hidden]{display:none}
+.lightbox img{max-height:92vh;max-width:94vw;width:auto}
+.lb-close{position:absolute;top:10px;right:18px;font-size:42px;color:#fff;background:none;border:0;cursor:pointer}
+
+/* ---------- Kontakt / Footer ---------- */
+.site-foot{background:var(--band);text-align:center;padding:66px 24px 90px;color:#fff}
+.site-foot h2{font:700 15px/1.4 var(--lulo);letter-spacing:4.5px;text-transform:uppercase;color:var(--tq);margin-bottom:14px}
+.foot-contact{font:italic 20px/30px var(--serif);letter-spacing:.5px;margin:0}
+.foot-contact a{color:#fff}
+.copyright{background:var(--tq);color:#fff;padding:14px 16px;font:11px/1.6 var(--lulo);letter-spacing:0;text-align:center}
+
+/* ---------- Effekte ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---------- Tablet / Mobile ---------- */
+@media (max-width:900px){
+  :root{--head:72px}
+  .site-head{height:72px;padding:0 12px 0 16px}
+  .logo{font-size:24px}
+  .menu-btn{display:block}
+  .nav{position:absolute;left:0;right:0;top:72px;background:#fff;box-shadow:0 10px 20px rgba(0,0,0,.12);max-height:0;overflow:hidden;transition:max-height .35s}
+  .menu-open .nav{max-height:calc(100vh - 72px);overflow:auto}
+  .nav ul{flex-direction:column;align-items:stretch;padding:8px 0 16px}
+  .nav a{padding:12px 24px;font-size:19px;text-align:left;width:100%}
+  .cols{grid-template-columns:1fr}
+  .col{padding:40px 24px}
+  .band,.houses{padding:50px 20px 60px}
+  .band h2{font-size:30px}
+  .grid{grid-template-columns:1fr 1fr;gap:34px 28px}
+  .quote{padding:90px 20px}
+  .house{margin-top:44px}
+  .house h3{font-size:24px}
+  .grow{flex-direction:column}
+  .site-foot{padding:50px 20px 60px}
+}
+@media (max-width:560px){
+  .grid{grid-template-columns:1fr}
+}

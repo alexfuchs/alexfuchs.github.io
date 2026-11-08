@@ -76,8 +76,14 @@ p{margin:0 0 22.5px}
 .gi:hover img{opacity:.85}
 .lightbox{position:fixed;inset:0;z-index:100;background:rgba(10,20,25,.92);display:flex;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
 .lightbox[hidden]{display:none}
-.lightbox img{max-height:92vh;max-width:94vw;width:auto}
+.lb-fig{margin:0;max-width:100%}
+.lightbox img{max-height:82vh;max-width:84vw;width:auto;cursor:default}
+.lb-count{margin-top:12px;text-align:center;font:300 14px var(--avenir);letter-spacing:.2em;color:#fff}
 .lb-close{position:absolute;top:10px;right:18px;font-size:42px;color:#fff;background:none;border:0;cursor:pointer}
+.lb-arrow{position:absolute;top:50%;transform:translateY(-50%);width:58px;height:84px;background:rgba(24,39,46,.4);border:0;border-radius:4px;cursor:pointer;color:#fff;font:400 52px/84px var(--serif);text-align:center;transition:background .2s}
+.lb-prev{left:10px}
+.lb-next{right:10px}
+.lb-arrow:hover{background:var(--tq)}
 
 /* ---------- Kontakt / Footer ---------- */
 .site-foot{background:var(--band);text-align:center;padding:66px 24px 90px;color:#fff}
@@ -111,6 +117,12 @@ p{margin:0 0 22.5px}
   .house h3{font-size:24px}
   .grow{flex-direction:column}
   .site-foot{padding:50px 20px 60px}
+  .lb-arrow{width:44px;height:64px;font:400 42px/64px var(--serif)}
+  .lb-prev{left:6px}
+  .lb-next{right:6px}
+  .lightbox{padding:20px}
+  .lightbox img{max-height:78vh;max-width:88vw}
+  .lb-close{font-size:36px;top:6px;right:10px}
 }
 @media (max-width:560px){
   .grid{grid-template-columns:1fr}

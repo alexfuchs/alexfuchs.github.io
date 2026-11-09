@@ -65,10 +65,13 @@
       'po-s2h': 'Gestalten',
       'po-s2p': 'Politik beginnt im Alltag: zuhören, mitdenken, mitgestalten.',
       'p-haeuser': 'Häuser',
-      'houses-lead': 'Liegenschaften in Frauenfeld und Winterthur – gepflegt, vermietet und mit Liebe zum Detail. Bild anklicken: mit den Pfeilen ← → durch die ganze Bilderserie blättern.',
-      'loc-ff21': 'Thurgau · Schweiz · 32 Bilder',
-      'loc-ff23': 'Thurgau · Schweiz · 25 Bilder',
-      'loc-ww': 'Zürich · Schweiz · 8 Bilder'
+      'houses-lead': 'Drei Liegenschaften – gepflegt, vermietet und mit Liebe zum Detail. Bild anklicken: mit den Pfeilen ← → durch die ganze Bilderserie blättern.',
+      'house-1': 'Haus 1',
+      'loc-ff21': '32 Bilder',
+      'house-2': 'Haus 2',
+      'loc-ff23': '25 Bilder',
+      'house-3': 'Haus 3',
+      'loc-ww': '8 Bilder'
     },
     en: {
       'nav-it': 'IT', 'nav-ai': 'AI', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
@@ -132,10 +135,13 @@
       'po-s2h': 'Shaping things',
       'po-s2p': 'Politics starts in everyday life: listening, thinking along, helping shape.',
       'p-haeuser': 'Houses',
-      'houses-lead': 'Properties in Frauenfeld and Winterthur – well kept, rented and maintained with attention to detail. Click a photo: use the ← → arrows to browse the whole series.',
-      'loc-ff21': 'Thurgau · Switzerland · 32 photos',
-      'loc-ff23': 'Thurgau · Switzerland · 25 photos',
-      'loc-ww': 'Zurich · Switzerland · 8 photos'
+      'houses-lead': 'Three properties – well kept, rented and maintained with attention to detail. Click a photo: use the ← → arrows to browse the whole series.',
+      'house-1': 'House 1',
+      'loc-ff21': '32 photos',
+      'house-2': 'House 2',
+      'loc-ff23': '25 photos',
+      'house-3': 'House 3',
+      'loc-ww': '8 photos'
     },
     pt: {
       'nav-it': 'TI', 'nav-ai': 'IA', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
@@ -199,10 +205,13 @@
       'po-s2h': 'Construir',
       'po-s2p': 'A política começa no dia a dia: ouvir, pensar junto, participar.',
       'p-haeuser': 'Casas',
-      'houses-lead': 'Imóveis em Frauenfeld e Winterthur – bem cuidados, alugados e com atenção ao detalhe. Clique numa foto: use as setas ← → para navegar por toda a série.',
-      'loc-ff21': 'Turgóvia · Suíça · 32 fotos',
-      'loc-ff23': 'Turgóvia · Suíça · 25 fotos',
-      'loc-ww': 'Zurique · Suíça · 8 fotos'
+      'houses-lead': 'Três imóveis – bem cuidados, alugados e com atenção ao detalhe. Clique numa foto: use as setas ← → para navegar por toda a série.',
+      'house-1': 'Casa 1',
+      'loc-ff21': '32 fotos',
+      'house-2': 'Casa 2',
+      'loc-ff23': '25 fotos',
+      'house-3': 'Casa 3',
+      'loc-ww': '8 fotos'
     }
   };
 

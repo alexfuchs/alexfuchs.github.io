@@ -5,7 +5,7 @@
   var I18N = {
     de: {
       'nav-it': 'IT', 'nav-ai': 'AI', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
-      'nav-health': 'Health', 'nav-politik': 'Politik', 'nav-haeuser': 'Häuser', 'nav-saved': 'Lesezeichen',
+      'nav-health': 'Health', 'nav-politik': 'Politik', 'nav-haeuser': 'Häuser', 
       'title-home': 'Alex Fuchs · Naturwissenschafter ETH & IT Engineer',
       'title-it': 'Alex Fuchs · IT', 'title-ai': 'Alex Fuchs · AI',
       'title-eth': 'Alex Fuchs · Academic ETH', 'title-brasil': 'Alex Fuchs · Brasil',
@@ -65,7 +65,7 @@
       'po-s2h': 'Gestalten',
       'po-s2p': 'Politik beginnt im Alltag: zuhören, mitdenken, mitgestalten.',
       'p-haeuser': 'Häuser',
-      'p-saved': 'Lesezeichen', 'p-saved-lead': 'Gespeicherte Beiträge aus Reddit – kuratiert nach Themen.',
+      'saved-sec': 'Gespeicherte Beiträge aus Reddit',
       'houses-lead': 'Drei Liegenschaften – gepflegt, vermietet und mit Liebe zum Detail. Bild anklicken: mit den Pfeilen ← → durch die ganze Bilderserie blättern.',
       'house-1': 'Haus 1',
       'loc-ff21': '32 Bilder',
@@ -76,7 +76,7 @@
     },
     en: {
       'nav-it': 'IT', 'nav-ai': 'AI', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
-      'nav-health': 'Health', 'nav-politik': 'Politics', 'nav-haeuser': 'Houses', 'nav-saved': 'Saved',
+      'nav-health': 'Health', 'nav-politik': 'Politics', 'nav-haeuser': 'Houses', 
       'title-home': 'Alex Fuchs · Natural Scientist ETH & IT Engineer',
       'title-it': 'Alex Fuchs · IT', 'title-ai': 'Alex Fuchs · AI',
       'title-eth': 'Alex Fuchs · Academic ETH', 'title-brasil': 'Alex Fuchs · Brasil',
@@ -136,7 +136,7 @@
       'po-s2h': 'Shaping things',
       'po-s2p': 'Politics starts in everyday life: listening, thinking along, helping shape.',
       'p-haeuser': 'Houses',
-      'p-saved': 'Saved', 'p-saved-lead': 'Saved posts from Reddit – curated by topic.',
+      'saved-sec': 'Saved posts from Reddit',
       'houses-lead': 'Three properties – well kept, rented and maintained with attention to detail. Click a photo: use the ← → arrows to browse the whole series.',
       'house-1': 'House 1',
       'loc-ff21': '32 photos',
@@ -147,7 +147,7 @@
     },
     pt: {
       'nav-it': 'TI', 'nav-ai': 'IA', 'nav-eth': 'ETH', 'nav-brasil': 'Brasil',
-      'nav-health': 'Saúde', 'nav-politik': 'Política', 'nav-haeuser': 'Casas', 'nav-saved': 'Salvos',
+      'nav-health': 'Saúde', 'nav-politik': 'Política', 'nav-haeuser': 'Casas', 
       'title-home': 'Alex Fuchs · Cientista Natural ETH & Engenheiro de TI',
       'title-it': 'Alex Fuchs · TI', 'title-ai': 'Alex Fuchs · IA',
       'title-eth': 'Alex Fuchs · ETH Acadêmica', 'title-brasil': 'Alex Fuchs · Brasil',
@@ -207,7 +207,7 @@
       'po-s2h': 'Construir',
       'po-s2p': 'A política começa no dia a dia: ouvir, pensar junto, participar.',
       'p-haeuser': 'Casas',
-      'p-saved': 'Salvos', 'p-saved-lead': 'Posts salvos do Reddit – organizados por tema.',
+      'saved-sec': 'Posts salvos do Reddit',
       'houses-lead': 'Três imóveis – bem cuidados, alugados e com atenção ao detalhe. Clique numa foto: use as setas ← → para navegar por toda a série.',
       'house-1': 'Casa 1',
       'loc-ff21': '32 fotos',

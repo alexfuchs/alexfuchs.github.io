@@ -3,94 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title data-i18n="title-home">Alex Fuchs · Naturwissenschafter ETH & IT Engineer</title>
+<title data-i18n="title-home">Alex Fuchs · Naturwissenschafter ETH &amp; IT Engineer</title>
 <meta name="description" content="Alex Fuchs – Naturwissenschafter ETH, IT Engineer aus Zürich.">
 <meta property="og:title" content="Alex Fuchs">
-<meta property="og:image" content="/assets/img/alps/saentis.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23314e5d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='34' fill='%23fff' text-anchor='middle'%3EAF%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=playfair-display:400,400i,700,700i|rozha-one:400|montserrat:400,700|mulish:300,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=6">
+<meta property="og:description" content="Alex Fuchs – Naturwissenschafter ETH, IT Engineer aus Zürich.">
+<meta property="og:image" content="https://alexfuchs.github.io/assets/img/alps/saentis.jpg">
+<meta name="theme-color" content="#0b0d0f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0d0f'/%3E%3Cpath d='M6 52 L22 34 L30 40 L44 14 L58 30' fill='none' stroke='%23ff5a1f' stroke-width='5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link href="https://fonts.bunny.net/css?family=instrument-serif:400,400i|inter:400,500,600|geist-mono:400,500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="/assets/css/style.css?v=7">
 </head>
-<body class="t-blue f-yellow">
-
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
 <header class="site-head" id="top">
   <a class="logo" href="/">Alex <span>Fuchs</span></a>
-  <button class="menu-btn" type="button" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
-  <nav class="nav" aria-label="Hauptmenü">
+  <nav class="nav" id="nav" aria-label="Hauptmenü">
     <ul>
-      <li><a href="/it.html" data-i18n="nav-it">IT</a></li>
-      <li><a href="/ai.html" data-i18n="nav-ai">AI</a></li>
-      <li><a href="/eth.html" data-i18n="nav-eth">ETH</a></li>
-      <li><a href="/brasil.html" data-i18n="nav-brasil">Brasil</a></li>
-      <li><a href="/health.html" data-i18n="nav-health">Health</a></li>
-      <li><a href="/politik.html" data-i18n="nav-politik">Politik</a></li>
-      <li><a href="/haeuser.html" data-i18n="nav-haeuser" class="on">Häuser</a></li>
+      <li><a href="/it.html" ><span class="n">01</span><span data-i18n="nav-it">IT</span></a></li>
+      <li><a href="/ai.html" ><span class="n">02</span><span data-i18n="nav-ai">AI</span></a></li>
+      <li><a href="/eth.html" ><span class="n">03</span><span data-i18n="nav-eth">ETH</span></a></li>
+      <li><a href="/brasil.html" ><span class="n">04</span><span data-i18n="nav-brasil">Brasil</span></a></li>
+      <li><a href="/health.html" ><span class="n">05</span><span data-i18n="nav-health">Health</span></a></li>
+      <li><a href="/politik.html" ><span class="n">06</span><span data-i18n="nav-politik">Politik</span></a></li>
     </ul>
   </nav>
-  <div class="lang-row" role="group" aria-label="Sprache / Language / Idioma">
-      <button class="lang lang-de" type="button" data-lang="de"><span>Deutsch</span></button>
-      <button class="lang lang-en" type="button" data-lang="en"><span>English</span></button>
-      <button class="lang lang-pt" type="button" data-lang="pt"><span>Português</span></button>
+  <div class="head-tools">
+    <div class="lang-row" role="group" aria-label="Sprache / Language / Idioma">
+      <button class="lang" type="button" data-lang="de" lang="de">DE</button>
+      <button class="lang" type="button" data-lang="en" lang="en">EN</button>
+      <button class="lang" type="button" data-lang="pt" lang="pt">PT</button>
     </div>
+    <a class="hx" href="/haeuser.html" aria-label="Häuser" title="Häuser"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Menü" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
 </header>
-
-<main>
-<!-- Hero: Säntis im Seealpsee -->
+<main id="main">
 <section class="hero">
-  <img src="/assets/img/pages/bg-index.jpg" alt="Schneebedeckter Gipfel im Gegenlicht" fetchpriority="high">
-  <div class="hero-title">
-    <h1>Alex Fuchs</h1>
-    <p data-i18n="hero-sub">Naturwissenschafter ETH · IT Engineer · Zürich</p>
-  </div>
-  <div class="scroll-hint">Scroll ↓</div>
-</section>
-
-<!-- Werdegang -->
-<section class="cols" id="werdegang">
-  <div class="col reveal">
-    <h2>ETH Zürich</h2>
-    <p class="when">Master of Science, 1997</p>
-    <p><span data-i18n="col1a">Naturwissenschaftliche Ausbildung mit</span> <strong data-i18n="col1b">Schwerpunkt auf Analyse und Methode</strong> <span data-i18n="col1c">– das Fundament für einen analytischen Blick auf Technologie, Daten und Systeme.</span></p>
-  </div>
-  <div class="col reveal">
-    <h2>Sun Microsystems</h2>
-    <p class="when">Presales Engineer, 1998–2005</p>
-    <p><span data-i18n="col2a">Technische Kundenberatung,</span> <strong data-i18n="col2b">Proof-of-Concepts und Produktpräsentationen</strong> <span data-i18n="col2c">zur Unterstützung des Verkaufs bei komplexen IT-Infrastrukturprojekten.</span></p>
-  </div>
-  <div class="col reveal">
-    <h2>ZKB</h2>
-    <p class="when">Senior System Engineer Webengineering, 2005–2025</p>
-    <p><span data-i18n="col3a">Konzeption, Entwicklung und Betrieb von</span> <strong data-i18n="col3b">Webapplikationen im E-Banking</strong> <span data-i18n="col3c">sowie Webservices für sämtliche Bankapplikationen. Verantwortung für Architektur, Sicherheit und Weiterentwicklung der Webengineering-Plattform.</span></p>
+  <figure class="hero-img"><img src="/assets/img/pages/bg-index.jpg" alt="" fetchpriority="high"></figure>
+  <div class="wrap hero-in">
+    <h1>Alex <em>Fuchs</em></h1>
+    <p class="hero-sub" data-i18n="hero-sub">Naturwissenschafter ETH · IT Engineer · Zürich</p>
+    <p class="coords mono">Zürich · 47.38° N · 8.54° E</p>
   </div>
 </section>
 
-<!-- Zitat-Band: Seealpsee -->
-<section class="quote" style="background-image:url(/assets/img/alps/seealpsee.jpg)">
-  <blockquote data-i18n="quote1">«In den Bergen findet der Kopf zurück, was der Bildschirm ihm nimmt: Weite, Klarheit und Perspektive.»</blockquote>
-  <cite data-i18n="cite1">Ausgleich für Geist und Gesundheit</cite>
+<section class="profile" id="werdegang">
+  <div class="wrap">
+    <p class="kicker mono" data-i18n="path">Werdegang</p>
+    <h2 class="big reveal">1997 – 2025</h2>
+    <div class="prof" role="img" aria-label="Höhenprofil: ETH 1997, Sun Microsystems 1998 bis 2005, ZKB 2005 bis 2025">
+      <svg viewBox="0 0 1000 250" preserveAspectRatio="none" aria-hidden="true">
+        <line class="base" x1="0" y1="249" x2="1000" y2="249"/>
+        <path class="ridge" pathLength="1" d="M0 240 L33 215 L50 205 L67 190 L120 178 L170 182 L240 160 L300 150 L330 152 L420 118 L470 126 L520 132 L580 104 L640 88 L700 96 L760 104 L820 84 L880 58 L930 50 L967 38"/>
+      </svg>
+      <span class="pt" style="left:3.3%;top:86%"><b>1997</b></span>
+      <span class="pt up" style="left:6.7%;top:76%"><b>1998</b></span>
+      <span class="pt up" style="left:30%;top:60%"><b>2005</b></span>
+      <span class="pt" style="left:96.7%;top:15.2%"><b>2025</b></span>
+    </div>
+    <div class="stages">
+      <div class="stage reveal">
+        <h2>ETH Zürich</h2>
+        <p class="when mono">Master of Science, 1997</p>
+        <p><span data-i18n="col1a">Naturwissenschaftliche Ausbildung mit</span> <strong data-i18n="col1b">Schwerpunkt auf Analyse und Methode</strong> <span data-i18n="col1c">– das Fundament für einen analytischen Blick auf Technologie, Daten und Systeme.</span></p>
+      </div>
+      <div class="stage reveal">
+        <h2>Sun Microsystems</h2>
+        <p class="when mono">Presales Engineer, 1998–2005</p>
+        <p><span data-i18n="col2a">Technische Kundenberatung,</span> <strong data-i18n="col2b">Proof-of-Concepts und Produktpräsentationen</strong> <span data-i18n="col2c">zur Unterstützung des Verkaufs bei komplexen IT-Infrastrukturprojekten.</span></p>
+      </div>
+      <div class="stage reveal">
+        <h2>ZKB</h2>
+        <p class="when mono">Senior System Engineer Webengineering, 2005–2025</p>
+        <p><span data-i18n="col3a">Konzeption, Entwicklung und Betrieb von</span> <strong data-i18n="col3b">Webapplikationen im E-Banking</strong> <span data-i18n="col3c">sowie Webservices für sämtliche Bankapplikationen. Verantwortung für Architektur, Sicherheit und Weiterentwicklung der Webengineering-Plattform.</span></p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Panorama-Band: Säntis und Alpstein -->
-<section class="quote" style="background-image:url(/assets/img/alps/alpstein.jpg);padding:90px 24px">
-  <blockquote data-i18n="quote2">«Säntis und Alpstein – die Bergwelt vor der Haustür.»</blockquote>
-  <cite data-i18n="cite2">Alpstein · Appenzell</cite>
+<section class="stations" aria-labelledby="themes-h">
+  <div class="wrap">
+    <p class="kicker mono" id="themes-h" data-i18n="themes">Themen</p>
+    <a class="st reveal" href="/it.html"><span class="n mono">01</span><span class="t" data-i18n="nav-it">IT</span><span class="d" data-i18n="it-lead">25 Jahre zwischen Architektur, Entwicklung und Betrieb.</span><span class="arr" aria-hidden="true">→</span></a>
+    <a class="st reveal" href="/ai.html"><span class="n mono">02</span><span class="t" data-i18n="nav-ai">AI</span><span class="d" data-i18n="ai-lead">Künstliche Intelligenz als Werkzeug von morgen.</span><span class="arr" aria-hidden="true">→</span></a>
+    <a class="st reveal" href="/eth.html"><span class="n mono">03</span><span class="t" data-i18n="nav-eth">ETH</span><span class="d" data-i18n="eth-lead">Naturwissenschafter, ETH Zürich.</span><span class="arr" aria-hidden="true">→</span></a>
+    <a class="st reveal" href="/brasil.html"><span class="n mono">04</span><span class="t" data-i18n="nav-brasil">Brasil</span><span class="d" data-i18n="br-lead">Eine herzliche Verbindung zwischen Zürich und Südamerika.</span><span class="arr" aria-hidden="true">→</span></a>
+    <a class="st reveal" href="/health.html"><span class="n mono">05</span><span class="t" data-i18n="nav-health">Health</span><span class="d" data-i18n="he-lead">Gesundheit ist Kapital.</span><span class="arr" aria-hidden="true">→</span></a>
+    <a class="st reveal" href="/politik.html"><span class="n mono">06</span><span class="t" data-i18n="nav-politik">Politik</span><span class="d" data-i18n="po-lead">Engagement für das Gemeinwesen.</span><span class="arr" aria-hidden="true">→</span></a>
+  </div>
 </section>
 
+<section class="ice">
+  <div class="wrap grid">
+    <img src="/assets/img/alps/seealpsee.jpg" alt="Seealpsee im Alpstein, die Berge spiegeln sich im grünen Wasser" loading="lazy" width="1600" height="1200">
+    <div class="reveal">
+      <blockquote data-i18n="quote1">«In den Bergen findet der Kopf zurück, was der Bildschirm ihm nimmt: Weite, Klarheit und Perspektive.»</blockquote>
+      <cite class="mono" data-i18n="cite1">Ausgleich für Geist und Gesundheit</cite>
+    </div>
+  </div>
+</section>
 
+<section class="panorama">
+  <img src="/assets/img/alps/alpstein.jpg" alt="" loading="lazy">
+  <div class="wrap reveal">
+    <blockquote data-i18n="quote2">«Säntis und Alpstein – die Bergwelt vor der Haustür.»</blockquote>
+    <cite class="mono" data-i18n="cite2">Alpstein · Appenzell</cite>
+  </div>
+</section>
 </main>
 
-<footer class="site-foot" id="kontakt">
-  <h2 data-i18n="foot-kicker">Kontakt</h2>
-  <p class="foot-contact">
-    +41 79 404 35 49<br>
-    <a href="mailto:fuchs222@gmail.com">fuchs222@gmail.com</a>
-  </p>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="top">
+      <a class="logo" href="/">Alex <span>Fuchs</span></a>
+      <nav aria-label="Seiten"><ul>
+        <li><a class="mono" href="/it.html" data-i18n="nav-it">IT</a></li>
+        <li><a class="mono" href="/ai.html" data-i18n="nav-ai">AI</a></li>
+        <li><a class="mono" href="/eth.html" data-i18n="nav-eth">ETH</a></li>
+        <li><a class="mono" href="/brasil.html" data-i18n="nav-brasil">Brasil</a></li>
+        <li><a class="mono" href="/health.html" data-i18n="nav-health">Health</a></li>
+        <li><a class="mono" href="/politik.html" data-i18n="nav-politik">Politik</a></li>
+      </ul></nav>
+    </div>
+    <p class="copy" data-i18n="copyright">COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED  |  FOTOS: WIKIMEDIA COMMONS – GILES LAURENT, JEAN SCHMITT, OLI, ARNE MÜSELER, ANK KUMAR, BENGT-RE, LEONHARD LENZ, NOIRLAB/NSF/AURA/T. SLOVINSKÝ (CC BY-SA / CC BY / CC0)</p>
+  </div>
 </footer>
-
-<div class="copyright" data-i18n="copyright">COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED</div>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Alex Fuchs","jobTitle":"IT Engineer","alumniOf":"ETH Zürich","address":{"@type":"PostalAddress","addressLocality":"Zürich","addressCountry":"CH"},"url":"https://alexfuchs.github.io/"}</script>
 <script src="/assets/js/site.js"></script>
-
 </body>
 </html>

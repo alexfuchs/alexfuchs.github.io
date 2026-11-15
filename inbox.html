@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eingang</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0d0f'/%3E%3Cpath d='M6 52 L22 34 L30 40 L44 14 L58 30' fill='none' stroke='%23ff5a1f' stroke-width='5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link href="https://fonts.bunny.net/css?family=inter:400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/inbox.css?v=1">
+</head>
+<body>
+<main>
+  <h1>Eingang</h1>
+  <p class="sub">Text, Link oder Foto ablegen und eine Kategorie wählen. Beim nächsten Update wird alles verarbeitet.</p>
+  <form id="form" novalidate>
+    <label for="txt">Text oder URL</label>
+    <textarea id="txt" rows="5" placeholder="Text einfügen oder https://…"></textarea>
+
+    <span class="lbl">Foto</span>
+    <div class="file">
+      <label class="btn quiet" for="file" style="margin:0;font-weight:500">Foto wählen oder aufnehmen</label>
+      <input id="file" type="file" accept="image/*" multiple>
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+
+    <fieldset class="cats">
+      <legend>Kategorie</legend>
+      <label class="cat"><input type="radio" name="cat" value="it"><span>IT</span></label>
+      <label class="cat"><input type="radio" name="cat" value="ai"><span>AI</span></label>
+      <label class="cat"><input type="radio" name="cat" value="eth"><span>ETH</span></label>
+      <label class="cat"><input type="radio" name="cat" value="brasil"><span>Brasil</span></label>
+      <label class="cat"><input type="radio" name="cat" value="health"><span>Health</span></label>
+      <label class="cat"><input type="radio" name="cat" value="politik"><span>Politik</span></label>
+      <label class="cat"><input type="radio" name="cat" value="haeuser"><span>Häuser</span></label>
+    </fieldset>
+
+    <div class="actions"><button class="btn primary" type="submit">Speichern</button></div>
+    <p class="msg" id="msg" role="status" aria-live="polite"></p>
+  </form>
+
+  <hr>
+  <h2>Gespeichert</h2>
+  <p class="empty" id="empty">Noch nichts gespeichert.</p>
+  <ul class="queue" id="queue"></ul>
+  <div class="actions">
+    <button class="btn primary" type="button" id="export" disabled>Für Update exportieren</button>
+    <button class="btn quiet" type="button" id="clear" disabled>Liste leeren</button>
+  </div>
+  <p class="note">Einträge bleiben nur in diesem Browser. «Für Update exportieren» speichert eine Datei, die im Eingangs-Ordner abgelegt und beim nächsten Update verarbeitet wird.</p>
+</main>
+<script src="/assets/js/inbox.js"></script>
+</body>
+</html>

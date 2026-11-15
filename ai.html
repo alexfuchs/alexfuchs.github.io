@@ -6,154 +6,156 @@
 <title data-i18n="title-ai">Alex Fuchs · AI</title>
 <meta name="description" content="AI: Künstliche Intelligenz als Werkzeug – Modelle, Automatisierung, Verantwortung.">
 <meta property="og:title" content="Alex Fuchs">
-<meta property="og:image" content="/assets/img/alps/saentis.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23314e5d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='34' fill='%23fff' text-anchor='middle'%3EAF%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=playfair-display:400,400i,700,700i|rozha-one:400|montserrat:400,700|mulish:300,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css?v=6">
+<meta property="og:description" content="AI: Künstliche Intelligenz als Werkzeug – Modelle, Automatisierung, Verantwortung.">
+<meta property="og:image" content="https://alexfuchs.github.io/assets/img/alps/saentis.jpg">
+<meta name="theme-color" content="#0b0d0f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0d0f'/%3E%3Cpath d='M6 52 L22 34 L30 40 L44 14 L58 30' fill='none' stroke='%23ff5a1f' stroke-width='5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link href="https://fonts.bunny.net/css?family=instrument-serif:400,400i|inter:400,500,600|geist-mono:400,500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="/assets/css/style.css?v=7">
 </head>
-<body class="t-blue f-green">
-
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
 <header class="site-head" id="top">
   <a class="logo" href="/">Alex <span>Fuchs</span></a>
-  <button class="menu-btn" type="button" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
-  <nav class="nav" aria-label="Hauptmenü">
+  <nav class="nav" id="nav" aria-label="Hauptmenü">
     <ul>
-      <li><a href="/it.html" data-i18n="nav-it">IT</a></li>
-      <li><a href="/ai.html" data-i18n="nav-ai" class="on">AI</a></li>
-      <li><a href="/eth.html" data-i18n="nav-eth">ETH</a></li>
-      <li><a href="/brasil.html" data-i18n="nav-brasil">Brasil</a></li>
-      <li><a href="/health.html" data-i18n="nav-health">Health</a></li>
-      <li><a href="/politik.html" data-i18n="nav-politik">Politik</a></li>
-      <li><a href="/haeuser.html" data-i18n="nav-haeuser">Häuser</a></li>
+      <li><a href="/it.html" ><span class="n">01</span><span data-i18n="nav-it">IT</span></a></li>
+      <li><a href="/ai.html" class="on" aria-current="page"><span class="n">02</span><span data-i18n="nav-ai">AI</span></a></li>
+      <li><a href="/eth.html" ><span class="n">03</span><span data-i18n="nav-eth">ETH</span></a></li>
+      <li><a href="/brasil.html" ><span class="n">04</span><span data-i18n="nav-brasil">Brasil</span></a></li>
+      <li><a href="/health.html" ><span class="n">05</span><span data-i18n="nav-health">Health</span></a></li>
+      <li><a href="/politik.html" ><span class="n">06</span><span data-i18n="nav-politik">Politik</span></a></li>
     </ul>
   </nav>
-  <div class="lang-row" role="group" aria-label="Sprache / Language / Idioma">
-      <button class="lang lang-de" type="button" data-lang="de"><span>Deutsch</span></button>
-      <button class="lang lang-en" type="button" data-lang="en"><span>English</span></button>
-      <button class="lang lang-pt" type="button" data-lang="pt"><span>Português</span></button>
+  <div class="head-tools">
+    <div class="lang-row" role="group" aria-label="Sprache / Language / Idioma">
+      <button class="lang" type="button" data-lang="de" lang="de">DE</button>
+      <button class="lang" type="button" data-lang="en" lang="en">EN</button>
+      <button class="lang" type="button" data-lang="pt" lang="pt">PT</button>
     </div>
-</header>
-
-<main>
-<section class="subhero">
-  <img src="/assets/img/pages/bg-ai.jpg" alt="Berglandschaft im Abendlicht" fetchpriority="high">
-  <div class="subhero-title">
-    <h1 data-i18n="p-ai">AI</h1>
+    <a class="hx" href="/haeuser.html" aria-label="Häuser" title="Häuser"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Menü" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
+</header>
+<main id="main">
+<section class="ph">
+  <svg class="topo" viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 39.0L12 45.9L24 49.3L36 50.2L48 50.3L60 51.0L72 53.0L84 55.6L96 57.7L108 57.6L120 54.2L132 47.6L144 39.0L156 30.7L168 24.9L180 23.2L192 26.0L204 32.1L216 39.1L228 44.3L240 45.5L252 41.8L264 34.0L276 23.9L288 13.9L300 6.2L312 1.9L324 0.9L336 1.9L348 3.5L360 4.4L372 4.2L384 3.8L396 4.5L408 8.1L420 15.4L432 26.1L444 38.5L456 50.2L468 58.6L480 61.9L492 59.8L504 53.5L516 45.4L528 38.1L540 33.9L552 33.6L564 36.7L576 41.6L588 46.0L600 48.4"/><path d="M0 58.9L12 58.7L24 59.7L36 63.5L48 70.5L60 79.9L72 89.5L84 96.8L96 99.6L108 96.5L120 88.0L132 75.9L144 62.9L156 51.7L168 44.2L180 40.9L192 40.8L204 42.2L216 43.2L228 42.7L240 40.5L252 37.6L264 35.6L276 35.8L288 38.8L300 43.8L312 49.2L324 53.1L336 53.6L348 50.3L360 44.0L372 36.9L384 31.5L396 30.3L408 34.4L420 43.3L432 55.3L444 67.8L456 78.2L468 84.9L480 87.5L492 86.9L504 84.8L516 82.8L528 81.8L540 81.7L552 81.3L564 79.2L576 74.1L588 65.9L600 55.7"/><path d="M0 90.6L12 84.1L24 81.5L36 83.4L48 89.1L60 96.5L72 103.1L84 106.8L96 106.7L108 103.2L120 97.6L132 91.8L144 87.1L156 84.1L168 82.1L180 79.7L192 75.5L204 68.6L216 59.7L228 50.1L240 42.3L252 38.6L264 40.5L276 47.7L288 58.9L300 71.3L312 82.1L324 89.3L336 91.9L348 90.8L360 87.6L372 84.6L384 83.4L396 84.9L408 88.3L420 92.3L432 95.3L444 96.2L456 95.0L468 92.7L480 91.1L492 91.7L504 95.5L516 101.8L528 108.9L540 114.4L552 115.9L564 112.0L576 102.8L588 89.9L600 76.0"/><path d="M0 130.6L12 126.8L24 124.6L36 123.4L48 121.6L60 118.0L72 112.1L84 104.8L96 97.6L108 92.5L120 91.1L132 93.7L144 99.4L156 106.0L168 110.9L180 111.9L192 108.3L204 100.5L216 90.6L228 81.3L240 74.9L252 73.1L264 75.7L276 81.7L288 89.0L300 95.8L312 101.0L324 104.7L336 107.8L348 111.8L360 117.6L372 125.5L384 134.2L396 141.9L408 146.3L420 146.0L432 140.5L444 131.1L456 120.2L468 110.6L480 104.5L492 103.1L504 105.9L516 111.1L528 116.3L540 119.3L552 118.9L564 115.2L576 109.5L588 103.6L600 99.1"/><path d="M0 158.3L12 162.5L24 164.8L36 163.1L48 156.5L60 145.2L72 131.3L84 117.4L96 106.3L108 100.1L120 99.4L132 103.0L144 109.1L156 115.1L168 119.4L180 121.1L192 120.8L204 120.0L216 120.2L228 122.4L240 126.6L252 131.7L264 136.0L276 137.9L288 136.7L300 132.9L312 128.2L324 124.9L336 125.2L348 130.2L360 139.6L372 151.4L384 162.9L396 171.5L408 175.2L420 173.6L432 167.7L444 159.5L456 151.3L468 144.6L480 140.0L492 136.9L504 134.0L516 129.9L528 124.0L540 116.8L552 109.8L564 105.0L576 103.9L588 107.2L600 114.2"/><path d="M0 167.9L12 174.1L24 177.0L36 175.6L48 170.0L60 161.7L72 152.9L84 145.5L96 140.8L108 138.5L120 137.8L132 137.1L144 135.2L156 132.1L168 128.6L180 126.4L192 127.5L204 133.1L216 143.2L228 156.1L240 169.5L252 180.6L264 187.0L276 188.0L288 184.4L300 178.1L312 171.7L324 167.4L336 166.4L348 168.4L360 172.0L372 175.5L384 177.2L396 176.5L408 174.0L420 170.8L432 168.8L444 168.7L456 170.8L468 173.7L480 175.5L492 174.2L504 168.4L516 158.3L528 145.5L540 132.6L552 122.5L564 117.2L576 117.7L588 123.1L600 131.6"/><path d="M0 177.2L12 174.6L24 170.6L36 166.3L48 163.2L60 162.9L72 166.0L84 171.7L96 178.3L108 183.6L120 185.5L132 183.1L144 176.9L156 168.8L168 161.6L180 157.7L192 158.8L204 165.0L216 174.8L228 186.0L240 196.3L252 203.8L264 208.1L276 209.8L288 210.5L300 211.5L312 213.5L324 216.2L336 218.4L348 218.2L360 214.4L372 206.6L384 195.7L396 184.0L408 174.0L420 168.0L432 167.1L444 170.8L456 177.3L468 183.8L480 188.1L492 188.4L504 184.8L516 178.4L528 171.4L540 165.8L552 162.8L564 162.7L576 164.4L588 166.4L600 167.5"/><path d="M0 200.0L12 188.2L24 177.2L36 169.8L48 167.7L60 171.5L72 180.1L84 191.1L96 201.7L108 209.7L120 213.9L132 214.7L144 213.5L156 212.1L168 212.3L180 214.5L192 218.3L204 222.3L216 224.8L228 224.9L240 222.7L252 219.3L264 216.5L276 216.4L288 220.0L300 227.1L312 235.9L324 244.1L336 248.9L348 248.5L360 242.4L372 231.9L384 219.2L396 207.1L408 197.7L420 192.0L432 189.8L444 189.6L456 189.7L468 189.0L480 187.2L492 184.9L504 183.9L516 185.4L528 190.3L540 198.1L552 207.2L564 215.3L576 220.1L588 220.5L600 216.7"/><path d="M0 227.3L12 217.9L24 210.6L36 206.8L48 206.9L60 210.0L72 214.5L84 218.7L96 221.7L108 223.7L120 225.7L132 229.3L144 235.7L156 244.9L168 256.0L180 266.7L192 274.6L204 277.7L216 275.1L228 267.8L240 257.9L252 248.0L264 240.8L276 237.7L288 238.7L300 242.3L312 246.4L324 249.1L336 249.0L348 246.1L360 241.6L372 237.1L384 234.0L396 232.9L408 233.1L420 233.4L432 231.9L444 227.5L456 220.0L468 210.8L480 202.0L492 196.4L504 195.9L516 201.2L528 211.5L540 224.5L552 237.4L564 247.7L576 253.9L588 256.1L600 255.4"/><path d="M0 245.1L12 248.2L24 253.5L36 259.9L48 265.4L60 268.1L72 267.2L84 262.9L96 256.9L108 251.7L120 249.7L132 252.5L144 260.1L156 271.2L168 283.2L180 293.4L192 299.7L204 301.4L216 298.9L228 294.0L240 288.6L252 284.1L264 280.9L276 278.6L288 275.6L300 270.8L312 263.5L324 254.2L336 244.6L348 236.9L360 233.2L372 234.4L384 240.1L396 248.5L408 256.9L420 262.7L432 264.3L444 261.5L456 255.4L468 248.4L480 242.9L492 240.6L504 242.2L516 246.8L528 252.8L540 258.4L552 262.6L564 265.1L576 267.0L588 269.6L600 274.4"/><path d="M0 261.0L12 273.1L24 287.0L36 299.6L48 308.6L60 312.6L72 311.9L84 308.0L96 303.4L108 300.0L120 299.1L132 300.7L144 303.6L156 306.2L168 307.0L180 305.6L192 302.5L204 299.2L216 297.3L228 298.1L240 301.6L252 306.6L264 310.9L276 312.2L288 308.8L300 300.3L312 288.1L324 274.4L336 262.2L348 253.9L360 250.8L372 252.5L384 257.6L396 263.9L408 269.4L420 273.1L432 275.2L444 276.8L456 279.4L468 283.9L480 290.5L492 298.1L504 304.9L516 308.9L528 308.9L540 305.0L552 298.5L564 291.9L576 287.7L588 287.8L600 292.5"/></svg>
+  <div class="wrap">
+    <p class="kicker mono"><span data-i18n="station">Station</span> 02</p>
+    <h1 data-i18n="p-ai">AI</h1>
+    <p class="lead" data-i18n="ai-lead">Künstliche Intelligenz als Werkzeug von morgen.</p>
+  </div>
+  <figure class="band"><img src="/assets/img/pages/bg-ai.jpg" alt="" fetchpriority="high"></figure>
 </section>
 
-<section class="ptext"><div class="wrap">
-  <p class="lead" data-i18n="ai-lead">Künstliche Intelligenz als Werkzeug von morgen.</p>
-  <h2 data-i18n="ai-s1h">Modelle & Automatisierung</h2>
-  <p data-i18n="ai-s1p">Sprachmodelle, Automatisierung und datengetriebene Entscheidungen: Ich setze KI praktisch ein – vom Prompt bis zur Pipeline.</p>
-  <h2 data-i18n="ai-s2h">Eigenversuch statt Hype</h2>
-  <p data-i18n="ai-s2p">Modelle selbst betreiben, Grenzen ausloten, Werkzeuge kritisch prüfen: Was hilft, bleibt. Was nur glänzt, geht.</p>
-  <h2 data-i18n="ai-s3h">Verantwortung</h2>
-  <p data-i18n="ai-s3p">Datenschutz, Transparenz und Verantwortung gehören für mich zur KI dazu – Technologie muss dem Menschen dienen.</p>
+<section class="rows"><div class="wrap">
+  <div class="row reveal"><h2 data-i18n="ai-s1h">Modelle &amp; Automatisierung</h2><p data-i18n="ai-s1p">Sprachmodelle, Automatisierung und datengetriebene Entscheidungen: Ich setze KI praktisch ein – vom Prompt bis zur Pipeline.</p></div>
+  <div class="row reveal"><h2 data-i18n="ai-s2h">Eigenversuch statt Hype</h2><p data-i18n="ai-s2p">Modelle selbst betreiben, Grenzen ausloten, Werkzeuge kritisch prüfen: Was hilft, bleibt. Was nur glänzt, geht.</p></div>
+  <div class="row reveal"><h2 data-i18n="ai-s3h">Verantwortung</h2><p data-i18n="ai-s3p">Datenschutz, Transparenz und Verantwortung gehören für mich zur KI dazu – Technologie muss dem Menschen dienen.</p></div>
 </div></section>
 
-
-  <section class="ptext saved-sec" id="saved">
-    <div class="wrap">
-      <h2 class="saved-h" data-i18n="saved-sec">Gespeicherte Beiträge</h2>
-      <div class="chgrid">
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/AgentsOfAI/comments/1xoudpz/whats_your_current_ai_setup/" target="_blank" rel="noopener"><img src="https://preview.redd.it/lvtl8y660vzh1.jpeg?auto=webp&s=35b73cd6fa6da31e901c625bd08b3afab44bd79a" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/AgentsOfAI · 925↑</p>
-        <h3><a href="https://www.reddit.com/r/AgentsOfAI/comments/1xoudpz/whats_your_current_ai_setup/" target="_blank" rel="noopener">What’s your current AI setup?</a></h3>
-        <p>Umfrage-Thread: die r/AgentsOfAI-Community teilt ihre aktuellen KI-Setups — Modelle, Agenten-Frameworks und lokale Hardware-Konfigurationen.</p>
+<section class="finds" id="saved"><div class="wrap">
+  <p class="finds-intro mono">Reddit</p>
+  <h2 class="finds-h" data-i18n="saved-sec">Gespeicherte Beiträge aus Reddit</h2>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/AgentsOfAI · 925↑</p><h3>What’s your current AI setup?</h3></div>
+      <div class="fund-body">
+        <p>Umfrage-Thread der Community r/AgentsOfAI: Die Teilnehmer sollen ihr aktuelles KI-Setup teilen, also Modelle und Anbieter (Cloud und lokal), Agenten und Frameworks, Voice-, Video- und Notiztools, Workflows und ungefähre Monatskosten. Der Thread hat über 1600 Punkte und fast 150 Kommentare; die ersten Antworten sind zum Teil spöttisch gegenüber sehr kleinen lokalen Modellen.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/AgentsOfAI/comments/1xoudpz/whats_your_current_ai_setup/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/hermesagent/comments/1xp7b08/genius_way_to_control_an_iphone_from_hermes/" target="_blank" rel="noopener"><img src="/assets/img/pages/th-ai.jpg" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/hermesagent · 57↑</p>
-        <h3><a href="https://www.reddit.com/r/hermesagent/comments/1xp7b08/genius_way_to_control_an_iphone_from_hermes/" target="_blank" rel="noopener">GENIUS way to control an iPhone from Hermes!</a></h3>
-        <p>Ein ESP32 für unter 20 $ als Bluetooth-Maus/-Tastatur plus AirPlay-Empfänger: so steuert Hermes ein iPhone — ohne Jailbreak, Mac oder Developer-Account.</p>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/hermesagent · 57↑</p><h3>GENIUS way to control an iPhone from Hermes!</h3></div>
+      <div class="fund-body">
+        <p>Ein ESP32 für unter 20 $ (zum Beispiel der XIAO ESP32S3) spielt gleichzeitig Bluetooth-Maus und -Tastatur und dient als AirPlay-Empfänger. So kann Hermes ein iPhone steuern, ohne Jailbreak, ohne Mac und ohne Developer-Account.</p>
+        <p>Früher brauchte man dafür ein gejailbreaktes iPhone (ios-mcp), einen Mac für iPhone-Mirroring (mirroir-mcp) oder einen Computer (iconnect). Nötig sind drei Bausteine: Eingabe per AssistiveTouch, Bildschirmaufnahme über AirPlay und ein MCP-Server. Der Beitrag verlinkt Videos und Projekte wie esp32-iphone-agent und Handsy.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/hermesagent/comments/1xp7b08/genius_way_to_control_an_iphone_from_hermes/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/hermesagent/search/?q=hermes+x+uncensored+models&amp;restrict_sr=1&amp;sort=new" target="_blank" rel="noopener"><img src="/assets/img/pages/th-ai.jpg" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/hermesagent</p>
-        <h3><a href="https://www.reddit.com/r/hermesagent/search/?q=hermes+x+uncensored+models&amp;restrict_sr=1&amp;sort=new" target="_blank" rel="noopener">hermes x uncensored models</a></h3>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/hermesagent</p><h3>hermes x uncensored models</h3></div>
+      <div class="fund-body">
         <p>Diskussion über den Einsatz lokaler uncensored Modelle im Hermes-Agenten.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/hermesagent/search/?q=hermes+x+uncensored+models&amp;restrict_sr=1&amp;sort=new" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/accelerate/search/?q=rAccelerate+PSA+Download+These+Before+The+Internet+Gets+Rest&amp;restrict_sr=1&amp;sort=new" target="_blank" rel="noopener"><img src="/assets/img/pages/th-ai.jpg" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/accelerate</p>
-        <h3><a href="https://www.reddit.com/r/accelerate/search/?q=rAccelerate+PSA+Download+These+Before+The+Internet+Gets+Rest&amp;restrict_sr=1&amp;sort=new" target="_blank" rel="noopener">🚨‼️r/Accelerate PSA‼️🚨 Download These Before The Internet Gets Restricted During The Cyber Pandemic</a></h3>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/accelerate</p><h3>🚨‼️r/Accelerate PSA‼️🚨 Download These Before The Internet Gets Restricted During The Cyber Pandemic</h3></div>
+      <div class="fund-body">
         <p>Kuratierte Download-Liste von KI-Modellen und Security-Tools (DeepSeek-Frameworks, Genom-Modelle, OSINT-Werkzeuge wie Blackbird und Maigret, HackRF).</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/accelerate/search/?q=rAccelerate+PSA+Download+These+Before+The+Internet+Gets+Rest&amp;restrict_sr=1&amp;sort=new" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/AIAgentsInAction/comments/1xevybs/ai_botagent_for_end_of_day_emailmessagingtodo/" target="_blank" rel="noopener"><img src="/assets/img/pages/th-ai.jpg" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/AIAgentsInAction · 7↑</p>
-        <h3><a href="https://www.reddit.com/r/AIAgentsInAction/comments/1xevybs/ai_botagent_for_end_of_day_emailmessagingtodo/" target="_blank" rel="noopener">AI bot/agent for end of day email/messaging/todo list review</a></h3>
-        <p>Suche nach einem KI-Agenten für den Tagesabschluss: abends E-Mails, Messenger und To-do-Listen durchgehen und Vorschläge machen.</p>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/AIAgentsInAction · 7↑</p><h3>AI bot/agent for end of day email/messaging/todo list review</h3></div>
+      <div class="fund-body">
+        <p>Jemand sucht einen KI-Agenten für einen Tagesabschluss gegen 19:30 Uhr: Er soll ungelesene Mails durchgehen und fragen, ob löschen, antworten, verschieben oder abbestellen; unbeantwortete Nachrichten in iMessage, WhatsApp und Messenger aufzeigen; und die Erinnerungen des Tages prüfen, mit Optionen erledigen, löschen oder verschieben. Das Umfeld ist Apple (macOS und iOS) mit Gmail.</p>
+        <p>Ein Kommentar beschreibt eine ähnliche Lösung unter Windows: ein geplanter Task für Gmail, Slack und VoIP-Nachrichten, den Claude Code in Python geschrieben hat.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/AIAgentsInAction/comments/1xevybs/ai_botagent_for_end_of_day_emailmessagingtodo/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/BuildWithClaude/comments/1x9h0kx/to_never_edit_a_video_again_i_built_an_opensource/" target="_blank" rel="noopener"><img src="https://external-preview.redd.it/bGtlc3N4ZTkzYndoMbb4J5hsxkMwR0Z2Ax9eGRit66jobszKsSS_um9rY6t3.png?format=pjpg&auto=webp&s=0e624c5193e74de87f4d1e628ebee4a3caa59b99" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/BuildWithClaude · 1203↑</p>
-        <h3><a href="https://www.reddit.com/r/BuildWithClaude/comments/1x9h0kx/to_never_edit_a_video_again_i_built_an_opensource/" target="_blank" rel="noopener">To never edit a video again, I built an open-source agent that edits video (this video was made with it)</a></h3>
-        <p>Open-Source-Agent, der Videos selbst schneidet — das Demo-Video wurde von ihm montiert.</p>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/BuildWithClaude · 1203↑</p><h3>To never edit a video again, I built an open-source agent that edits video (this video was made with it)</h3></div>
+      <div class="fund-body">
+        <p>OpenFilm macht aus Claude Code (oder Codex und anderen Agenten) einen Videoeditor. Der Agent schreibt den Film als einfache HTML-Seiten plus Video- und Audioclips; OpenFilm liefert Timeline, Live-Vorschau und Export. Gefällt etwas nicht, klickt man es in der Vorschau an und ändert es selbst oder zieht einen Rahmen und sagt Claude, was zu korrigieren ist.</p>
+        <p>Das Projekt ist kostenlos und Open Source (MIT), installiert wird es mit einem Befehl in Claude Code. Ein Kommentator berichtet, er habe damit in etwa zehn Minuten zwei 25-Sekunden-Promos erstellt, mit Gemini-TTS für die Stimme und Whisper für die Wortzeiten.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/BuildWithClaude/comments/1x9h0kx/to_never_edit_a_video_again_i_built_an_opensource/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/ChatGPT/comments/1x9jq9i/harari_warns_ai_could_soon_reduce_humans_to_the/" target="_blank" rel="noopener"><img src="https://external-preview.redd.it/bmRkbmk5NTByYndoMZW2ANcYfMOTZ3CNcoxfX9g39kHS3h7QPnxohh8PlH2t.png?format=pjpg&auto=webp&s=18c7128de4aa53d84f6f60fa9f2588d7a3304b8f" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/ChatGPT · 3467↑</p>
-        <h3><a href="https://www.reddit.com/r/ChatGPT/comments/1x9jq9i/harari_warns_ai_could_soon_reduce_humans_to_the/" target="_blank" rel="noopener">Harari warns AI could soon reduce humans to the cows of the future</a></h3>
-        <p>Harari warnt: KI könnte den Menschen auf die «Kühe der Zukunft» reduzieren.</p>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/ChatGPT · 3467↑</p><h3>Harari warns AI could soon reduce humans to the cows of the future</h3></div>
+      <div class="fund-body">
+        <p>Video-Beitrag, in dem Yuval Noah Harari davor warnt, KI könnte Menschen bald zu den «Kühen der Zukunft» machen. Der Beitrag hat über 3400 Punkte und mehr als 1000 Kommentare; im Subreddit wurde er auf dem Discord hervorgehoben.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/ChatGPT/comments/1x9jq9i/harari_warns_ai_could_soon_reduce_humans_to_the/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/claudeskills/comments/1xa5ym6/claude_codes_artifact_tool_costs_13k_tokens_of/" target="_blank" rel="noopener"><img src="/assets/img/pages/th-ai.jpg" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/claudeskills · 15↑</p>
-        <h3><a href="https://www.reddit.com/r/claudeskills/comments/1xa5ym6/claude_codes_artifact_tool_costs_13k_tokens_of/" target="_blank" rel="noopener">Claude Code&#x27;s Artifact tool costs ~13k tokens of context in every session. Here&#x27;s a workaround</a></h3>
-        <p>Claude Codes Artifact-Tool kostet ~13k Tokens Kontext in jeder Session; der Ersatz /local-artifact lädt nur auf Aufruf.</p>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/claudeskills · 15↑</p><h3>Claude Code's Artifact tool costs ~13k tokens of context in every session. Here's a workaround</h3></div>
+      <div class="fund-body">
+        <p>Der Autor weist darauf hin, dass Claude Code schon vor der ersten Eingabe Skills, MCP-Server, Plugins und eingebaute Tools in den Kontext lädt. Allein das Artifact-Tool kostet ihm rund 13'000 Tokens pro Sitzung, auch wenn er nie eine Seite erzeugt.</p>
+        <p>Seine Lösung: ein Skill namens /manage-context, der misst, was den Startkontext füllt und wie oft es genutzt wird (mit Probelauf und Rückgängig), und /local-artifact als Ersatz, der nur bei Aufruf geladen wird. Das eingebaute Tool sperrt er über die Berechtigungen. Ein Kommentar bestätigt das Problem und empfiehlt zusätzlich ein eigenes Design-System.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/claudeskills/comments/1xa5ym6/claude_codes_artifact_tool_costs_13k_tokens_of/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/ChatGPTPro/comments/1x86z59/deeper_not_bigger_i_turned_felix_riesebergs_depth/" target="_blank" rel="noopener"><img src="/assets/img/pages/th-ai.jpg" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/ChatGPTPro · 31↑</p>
-        <h3><a href="https://www.reddit.com/r/ChatGPTPro/comments/1x86z59/deeper_not_bigger_i_turned_felix_riesebergs_depth/" target="_blank" rel="noopener">&quot;Deeper, not bigger&quot;: I turned Felix Rieseberg&#x27;s depth prompt into a free Agent Skill, and tried to</a></h3>
-        <p>Felix Riesebergs «Tiefe statt Grösse»-Prompt als kostenlose Agent Skill (MIT): vier Fragen erzwingen bessere Eingaben und überprüfbare Ergebnisse.</p>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/ChatGPTPro · 31↑</p><h3>&quot;Deeper, not bigger&quot;: I turned Felix Rieseberg's depth prompt into a free Agent Skill, and tried to</h3></div>
+      <div class="fund-body">
+        <p>Aufhänger ist ein Essay von Felix Rieseberg (Engineering Lead bei Claude) über Ambition im Umgang mit Modellen. Sein «Tiefe»-Prompt stellt vier Fragen: Was würde ein Top-Profi tun, das ich nicht verlange? Welches Rohmaterial würde er statt aufbereiteter Zusammenfassungen nehmen? Welche Methoden und Werkzeuge? Woran würde man, ausser an Modell oder Nutzer, erkennen, dass das Ergebnis stimmt? Danach schreibt das Modell den Prompt entsprechend um.</p>
+        <p>Die Grundidee: Wer «besser» verlangt, bekommt meist «mehr», und «handle wie ein Experte» ändert nur das Vokabular. Der Autor hat daraus einen kostenlosen Agent Skill gebaut. Ein Kommentar fragt kritisch, ob sich die Wortfülle nur vom Ergebnis in den Prompt verschiebt.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/ChatGPTPro/comments/1x86z59/deeper_not_bigger_i_turned_felix_riesebergs_depth/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-    <article class="chcard">
-      <a class="chimg" href="https://www.reddit.com/r/claudeskills/comments/1x6nko3/skills_atlas_browse_agent_skills_by_theme_see/" target="_blank" rel="noopener"><img src="https://preview.redd.it/7u8wdbwl8nvh1.png?auto=webp&s=fef662117736bf90b7cec9aeb71e9d0abbca5eb8" alt="" loading="lazy"></a>
-      <div class="chbody">
-        <p class="chsub">r/claudeskills · 2↑</p>
-        <h3><a href="https://www.reddit.com/r/claudeskills/comments/1x6nko3/skills_atlas_browse_agent_skills_by_theme_see/" target="_blank" rel="noopener">Skills Atlas: browse agent skills by theme, see installed skills, and build a selection to install.</a></h3>
-        <p>Skills Atlas: Agent-Skills nach Thema durchstöbern, installierte sehen und Auswahl für die Installation bauen.</p>
+    <article class="fund reveal">
+      <div><p class="fund-meta mono">r/claudeskills · 2↑</p><h3>Skills Atlas: browse agent skills by theme, see installed skills, and build a selection to install.</h3></div>
+      <div class="fund-body">
+        <p>Skills Atlas ist ein kostenloses Open-Source-Kommandozeilenwerkzeug (MIT), mit dem sich Agent-Skills entdecken und verwalten lassen. Es gruppiert über 70'000 öffentliche Skills nach Themen, erlaubt Suche nach Name, Repository oder Beschreibung und die Mehrfachauswahl samt Wahl von Agent und Installationsumfang. Die Befehle lassen sich vor dem Ausführen prüfen.</p>
+        <p>Unterstützt werden unter anderem Codex, Claude Code und Cursor, mit Terminal-Oberfläche und lokaler Web-Oberfläche. Gestartet wird es mit npx (Node.js 20 oder neuer). Ein Kommentar wünscht sich die zuletzt getestete Agent-Version und nötige Programme neben jedem Skill.</p>
+        <a class="fund-link mono" href="https://www.reddit.com/r/claudeskills/comments/1x6nko3/skills_atlas_browse_agent_skills_by_theme_see/" target="_blank" rel="noopener noreferrer"><span data-i18n="read-on">Beitrag auf Reddit lesen</span> →</a>
       </div>
     </article>
-      </div>
-    </div>
-  </section>
+</div></section>
+
+<div class="wrap"><a class="next" href="/eth.html"><span class="mono" data-i18n="next">Nächste Station</span><span class="t" data-i18n="nav-eth">ETH</span></a></div>
 </main>
 
-<footer class="site-foot" id="kontakt">
-  <h2 data-i18n="foot-kicker">Kontakt</h2>
-  <p class="foot-contact">
-    +41 79 404 35 49<br>
-    <a href="mailto:fuchs222@gmail.com">fuchs222@gmail.com</a>
-  </p>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="top">
+      <a class="logo" href="/">Alex <span>Fuchs</span></a>
+      <nav aria-label="Seiten"><ul>
+        <li><a class="mono" href="/it.html" data-i18n="nav-it">IT</a></li>
+        <li><a class="mono" href="/ai.html" data-i18n="nav-ai">AI</a></li>
+        <li><a class="mono" href="/eth.html" data-i18n="nav-eth">ETH</a></li>
+        <li><a class="mono" href="/brasil.html" data-i18n="nav-brasil">Brasil</a></li>
+        <li><a class="mono" href="/health.html" data-i18n="nav-health">Health</a></li>
+        <li><a class="mono" href="/politik.html" data-i18n="nav-politik">Politik</a></li>
+      </ul></nav>
+    </div>
+    <p class="copy" data-i18n="copyright">COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED  |  FOTOS: WIKIMEDIA COMMONS – GILES LAURENT, JEAN SCHMITT, OLI, ARNE MÜSELER, ANK KUMAR, BENGT-RE, LEONHARD LENZ, NOIRLAB/NSF/AURA/T. SLOVINSKÝ (CC BY-SA / CC BY / CC0)</p>
+  </div>
 </footer>
-
-<div class="copyright" data-i18n="copyright">COPYRIGHT © 2026 ALEX FUCHS · ALL RIGHTS RESERVED</div>
-
 <script src="/assets/js/site.js"></script>
-
 </body>
 </html>

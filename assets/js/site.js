@@ -1,4 +1,4 @@
-/* alexfuchs.github.io – shared i18n, navigation, lightbox deck, reveal */
+/* alexfuchs.github.io – i18n (de/en/pt), Menü, Bilder-Deck, Einblenden */
 (function(){
   var d = document;
 
@@ -66,7 +66,13 @@
       'po-s2p': 'Politik beginnt im Alltag: zuhören, mitdenken, mitgestalten.',
       'p-haeuser': 'Häuser',
       'saved-sec': 'Gespeicherte Beiträge aus Reddit',
-      'houses-lead': 'Drei Liegenschaften – gepflegt, vermietet und mit Liebe zum Detail. Bild anklicken: mit den Pfeilen ← → durch die ganze Bilderserie blättern.',
+      'station': 'Station',
+      'path': 'Werdegang',
+      'themes': 'Themen',
+      'next': 'Nächste Station',
+      'home': 'Zurück zum Anfang',
+      'read-on': 'Beitrag auf Reddit lesen',
+      'houses-lead': 'Drei Liegenschaften – gepflegt, vermietet und mit Liebe zum Detail. Die Bilder öffnen erst, wenn du den Link anklickst.',
       'house-1': 'Haus 1',
       'loc-ff21': '32 Bilder',
       'house-2': 'Haus 2',
@@ -137,7 +143,13 @@
       'po-s2p': 'Politics starts in everyday life: listening, thinking along, helping shape.',
       'p-haeuser': 'Houses',
       'saved-sec': 'Saved posts from Reddit',
-      'houses-lead': 'Three properties – well kept, rented and maintained with attention to detail. Click a photo: use the ← → arrows to browse the whole series.',
+      'station': 'Station',
+      'path': 'Career',
+      'themes': 'Topics',
+      'next': 'Next station',
+      'home': 'Back to the start',
+      'read-on': 'Read the post on Reddit',
+      'houses-lead': 'Three properties – well kept, rented and maintained with attention to detail. The photos only open when you click the link.',
       'house-1': 'House 1',
       'loc-ff21': '32 photos',
       'house-2': 'House 2',
@@ -208,7 +220,13 @@
       'po-s2p': 'A política começa no dia a dia: ouvir, pensar junto, participar.',
       'p-haeuser': 'Casas',
       'saved-sec': 'Posts salvos do Reddit',
-      'houses-lead': 'Três imóveis – bem cuidados, alugados e com atenção ao detalhe. Clique numa foto: use as setas ← → para navegar por toda a série.',
+      'station': 'Estação',
+      'path': 'Trajetória',
+      'themes': 'Temas',
+      'next': 'Próxima estação',
+      'home': 'Voltar ao início',
+      'read-on': 'Ler o post no Reddit',
+      'houses-lead': 'Três imóveis – bem cuidados, alugados e com atenção ao detalhe. As fotos só abrem quando você clica no link.',
       'house-1': 'Casa 1',
       'loc-ff21': '32 fotos',
       'house-2': 'Casa 2',
@@ -226,7 +244,9 @@
       if (t != null) el.textContent = t;
     });
     d.querySelectorAll('.lang').forEach(function(b){
-      b.classList.toggle('on', b.getAttribute('data-lang') === l);
+      var on = b.getAttribute('data-lang') === l;
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
     try { localStorage.setItem('af-lang', l); } catch (e) {}
   }
@@ -237,7 +257,7 @@
   try { saved = localStorage.getItem('af-lang') || 'de'; } catch (e) {}
   setLang(saved);
 
-  // Menü
+  // Menü (schmale Bildschirme)
   var head = d.querySelector('.site-head'), btn = d.querySelector('.menu-btn');
   if (btn) {
     btn.addEventListener('click', function(){
@@ -247,14 +267,18 @@
     d.querySelectorAll('.nav a').forEach(function(a){
       a.addEventListener('click', function(){ head.classList.remove('menu-open'); btn.setAttribute('aria-expanded', false); });
     });
+    d.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && head.classList.contains('menu-open')) { head.classList.remove('menu-open'); btn.setAttribute('aria-expanded', false); btn.focus(); }
+    });
   }
 
-  // Lightbox mit Slide-Deck (nur Häuser-Seite)
+  // Bilder der Häuser: erst beim Klick auf den Link laden (Slide-Deck)
   var lb = d.querySelector('.lightbox');
   if (lb) {
     var lbImg = lb.querySelector('img'), lbCount = lb.querySelector('.lb-count'),
         lbPrev = lb.querySelector('.lb-prev'), lbNext = lb.querySelector('.lb-next'),
-        deck = [], deckIdx = 0, deckBase = '';
+        lbClose = lb.querySelector('.lb-close'),
+        deck = [], deckIdx = 0, deckBase = '', opener = null;
     function show(i){
       deckIdx = (i + deck.length) % deck.length;
       lbImg.src = deckBase + deck[deckIdx];
@@ -269,17 +293,19 @@
       var at = deck.indexOf(startFile); if (at < 0) at = 0;
       show(at);
       lb.hidden = false;
+      lbClose.focus();
     }
+    function close(){ lb.hidden = true; lbImg.removeAttribute('src'); deck = []; if (opener) opener.focus(); }
     d.querySelectorAll('.gi').forEach(function(a){
       a.addEventListener('click', function(e){
-        e.preventDefault();
+        e.preventDefault(); opener = a;
         openDeck(a.closest('.house').getAttribute('data-house'), a.getAttribute('data-file'));
       });
     });
     lbPrev.addEventListener('click', function(e){ e.stopPropagation(); show(deckIdx - 1); });
     lbNext.addEventListener('click', function(e){ e.stopPropagation(); show(deckIdx + 1); });
     lbImg.addEventListener('click', function(e){ e.stopPropagation(); show(deckIdx + 1); });
-    function close(){ lb.hidden = true; lbImg.removeAttribute('src'); deck = []; }
+    lbClose.addEventListener('click', function(e){ e.stopPropagation(); close(); });
     lb.addEventListener('click', close);
     d.addEventListener('keydown', function(e){
       if (lb.hidden) return;
@@ -289,13 +315,14 @@
     });
   }
 
-  // Reveal
+  // Einblenden und Höhenprofil zeichnen
+  var targets = d.querySelectorAll('.reveal, .prof');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, {threshold:.15});
-    d.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    }, {threshold:.2});
+    targets.forEach(function(el){ io.observe(el); });
   } else {
-    d.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    targets.forEach(function(el){ el.classList.add('in'); });
   }
 })();

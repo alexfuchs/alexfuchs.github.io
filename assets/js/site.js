@@ -78,6 +78,12 @@
       'next': 'Nächste Station',
       'home': 'Zurück zum Anfang',
       'read-on': 'Beitrag auf Reddit lesen',
+      'station': 'Station',
+      'path': 'Werdegang',
+      'themes': 'Themen',
+      'next': 'Nächste Station',
+      'home': 'Zurück zum Anfang',
+      'read-on': 'Beitrag auf Reddit lesen',
       'houses-lead': 'Drei Liegenschaften – gepflegt, vermietet und mit Liebe zum Detail. Die Bilder öffnen erst, wenn du den Link anklickst.',
       'house-1': 'Haus 1',
       'loc-ff21': '32 Bilder',
@@ -149,6 +155,12 @@
       'po-s2p': 'Politics starts in everyday life: listening, thinking along, helping shape.',
       'p-haeuser': 'Houses',
       'saved-sec': 'Saved posts from Reddit',
+      'station': 'Station',
+      'path': 'Career',
+      'themes': 'Topics',
+      'next': 'Next station',
+      'home': 'Back to the start',
+      'read-on': 'Read the post on Reddit',
       'station': 'Station',
       'path': 'Career',
       'themes': 'Topics',
@@ -244,6 +256,12 @@
       'next': 'Próxima estação',
       'home': 'Voltar ao início',
       'read-on': 'Ler o post no Reddit',
+      'station': 'Estação',
+      'path': 'Trajetória',
+      'themes': 'Temas',
+      'next': 'Próxima estação',
+      'home': 'Voltar ao início',
+      'read-on': 'Ler o post no Reddit',
       'houses-lead': 'Três imóveis – bem cuidados, alugados e com atenção ao detalhe. As fotos só abrem quando você clica no link.',
       'house-1': 'Casa 1',
       'loc-ff21': '32 fotos',
@@ -259,6 +277,11 @@
     d.documentElement.lang = l;
     d.querySelectorAll('[data-i18n]').forEach(function(el){
       var t = I18N[l][el.getAttribute('data-i18n')];
+      if (t != null) el.textContent = t;
+    });
+    d.querySelectorAll('[data-en]').forEach(function(el){
+      if (el.getAttribute('data-de') == null) el.setAttribute('data-de', el.textContent);
+      var t = el.getAttribute('data-' + l);
       if (t != null) el.textContent = t;
     });
     d.querySelectorAll('.lang').forEach(function(b){

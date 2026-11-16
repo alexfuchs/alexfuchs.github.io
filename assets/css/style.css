@@ -144,7 +144,7 @@ h1,h2,h3{font-weight:400}
 
 /* ---------- Fuss ---------- */
 .site-foot{border-top:1px solid var(--line);padding:14px 0 10px}
-.site-foot .top{display:flex;flex-wrap:wrap;gap:6px var(--s2);justify-content:space-between;align-items:baseline}
+.site-foot .top{display:flex;flex-wrap:wrap;gap:6px var(--s2);justify-content:space-between;align-items:center}
 .site-foot nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 20px}
 .site-foot nav a{text-decoration:none;color:var(--muted);transition:color .2s}
 .site-foot nav a:hover{color:var(--acc)}

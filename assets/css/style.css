@@ -171,7 +171,7 @@ h1,h2,h3{font-weight:400}
 @media (max-width:900px){
   :root{--s3:28px;--s4:44px}
   .menu-btn{display:block}
-  .nav{position:fixed;inset:var(--head) 0 0 0;background:var(--ink);padding:var(--s2) var(--gut);display:none;overflow:auto}
+  .nav{position:absolute;top:100%;left:0;right:0;height:calc(100vh - var(--head));height:calc(100dvh - var(--head));background:var(--ink);padding:var(--s2) var(--gut);display:none;overflow:auto}
   .menu-open .nav{display:block}
   .nav ul{flex-direction:column;gap:0}
   .nav a{font-size:20px;padding:18px 0;border-bottom:1px solid var(--line)}
